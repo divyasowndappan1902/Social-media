@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In - Stackly</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./split-login.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- Left Split (Visual) -->
+    <div class="split-left">
+      <div class="left-content" data-aos="fade-right" data-aos-duration="1000">
+        <h1>Welcome Back to Stackly!</h1>
+        <p>Unlock a world of trending videos, exclusive creator tools, and personalized recommendations.</p>
+      </div>
+    </div>
+
+    <!-- Right Split (Form) -->
+    <div class="split-right">
+      <a href="./index.html" class="back-to-home">
+        <i class="fa-solid fa-arrow-left"></i> Back to Home
+      </a>
+
+      <div class="auth-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="auth-logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Stackly Logo" />
+          </a>
+        </div>
+        
+        <h2>Sign in to your account</h2>
+
+        <form id="loginForm">
+          <!-- Role Toggle -->
+          <div class="role-toggle-container">
+            <div class="role-toggle">
+              <input type="radio" id="role-customer" name="role" value="customer" checked>
+              <label for="role-customer" class="role-label">Customer</label>
+              
+              <input type="radio" id="role-admin" name="role" value="admin">
+              <label for="role-admin" class="role-label">Admin</label>
+              
+              <div class="role-selector"></div>
+            </div>
+          </div>
+
+          <!-- Inputs -->
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="••••••••" required />
+          </div>
+
+          <!-- Options -->
+          <div class="form-options">
+            <label class="checkbox-label">
+              <input type="checkbox" id="remember" />
+              Remember me
+            </label>
+            <a href="./forgotpassword.html" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit">LOG IN</button>
+
+          <!-- Social Login -->
+          <div class="social-login">
+            <p>Or log in with</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fa-brands fa-google"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-apple"></i></a>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="auth-footer">
+            Don't have an account? <a href="./signup.html">Register Now</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const form = document.getElementById("loginForm");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Basic validation matching the old logic
+        const email = document.getElementById("email").value.trim();
+        const pass = document.getElementById("password").value.trim();
+        const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$/;
+
+        if (!gmailPattern.test(email)) {
+          alert("Email must end with @gmail.com (Demo requirement)");
+          return;
+        }
+
+        if (!passwordPattern.test(pass)) {
+          alert("Password must contain:\n- Uppercase letter\n- Lowercase letter\n- Number\n- Special symbol\n- Minimum 6 characters");
+          return;
+        }
+
+        alert("Login successful!");
+
+        localStorage.setItem("userEmail", email);
+        const username = email.split('@')[0];
+        localStorage.setItem("userName", username.charAt(0).toUpperCase() + username.slice(1));
+        
+        const role = document.querySelector('input[name="role"]:checked').value;
+        if (role === 'admin') {
+          window.location.href = './admin_dashboard.html';
+        } else {
+          window.location.href = './customer_dashboard.html';
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
+</body>
+</html>
+
+
+
+

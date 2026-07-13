@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You Tube</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="menu-item">
+          <a href="./index.html">Home</a>
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item" active>
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+
+    <section class="contact-hero">
+      <div class="contact-hero-overlay"></div>
+      <div class="contact-hero-content">
+        <div class="breadcrumb">Home / Contact</div>
+        <h1 class="hero-title">Get in <span>Touch</span></h1>
+        <p class="hero-tagline">
+          Have a question about your channel or need technical assistance? Our
+          support team of creator experts is standing by.
+        </p>
+
+        <div class="contact-badges">
+          <div class="badge-item">
+            <i class="fas fa-bolt"></i>
+            <span>Fast Response</span>
+          </div>
+          <div class="badge-item">
+            <i class="fas fa-headset"></i>
+            <span>24/7 Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-main">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-container">
+            <h2 class="form-title">Send us a <span>Message</span></h2>
+            <form id="contactForm" class="main-form" action="./error.html">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Full Name" required />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input type="text" id="subject" placeholder="Subject" required/>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn" id="formSubmit">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-info-panel">
+            <div class="info-block">
+              <h3>Support <span>Center</span></h3>
+              <p><i class="fas fa-envelope"></i> support@creatorhub.com</p>
+              <a href="./error.html" class="support-link">Visit Help Center →</a>
+              <a href="./error.html" class="support-link">Browse FAQs →</a>
+            </div>
+
+            <div class="info-block">
+              <h3>Office <span>Location</span></h3>
+              <div class="map-placeholder">
+                <div class="map-overlay">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Stackly,India</span>
+                </div>
+                <img
+                  src="./Assets/office location_11zon.webp"
+                  alt="Office Location Map"
+                />
+              </div>
+            </div>
+
+            <div class="info-block">
+              <h3>Connect with <span>Us</span></h3>
+              <div class="social-icons">
+                <a href="./error.html" class="social-link"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="./error.html" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="./error.html" class="social-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="./error.html" class="social-link"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-channels-section">
+      <div class="container">
+        <h2 class="section-heading">Other Ways to <span>Connect</span></h2>
+        <div class="channels-grid">
+          <div class="channel-card">
+            <div class="channel-icon"><i class="fas fa-comments"></i></div>
+            <h3>Live Chat</h3>
+            <p>Talk to a real human instantly for quick resolutions.</p>
+            <a href="#" class="channel-link">Start Chat &rarr;</a>
+          </div>
+          <div class="channel-card">
+            <div class="channel-icon"><i class="fas fa-users"></i></div>
+            <h3>Community Forum</h3>
+            <p>Join 1M+ creators and learn from our community.</p>
+            <a href="#" class="channel-link">Visit Forum &rarr;</a>
+          </div>
+          <div class="channel-card">
+            <div class="channel-icon"><i class="fas fa-phone-alt"></i></div>
+            <h3>Phone Support</h3>
+            <p>Direct priority lines available for Premium Members.</p>
+            <a href="#" class="channel-link">Call Us &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="global-offices-section">
+      <div class="container">
+        <h2 class="section-heading">Our Global <span>Offices</span></h2>
+        <div class="offices-grid">
+          <div class="office-card" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./Assets/san_francisco.webp');">
+            <h3>San Francisco</h3>
+            <p class="office-type">Global HQ</p>
+            <p class="office-address"><i class="fas fa-map-marker-alt"></i> 123 Tech Blvd, SF 94105</p>
+          </div>
+          <div class="office-card" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./Assets/london.webp');">
+            <h3>London</h3>
+            <p class="office-type">Europe Hub</p>
+            <p class="office-address"><i class="fas fa-map-marker-alt"></i> 45 Innovation Way, LDN</p>
+          </div>
+          <div class="office-card" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./Assets/tokyo.webp');">
+            <h3>Tokyo</h3>
+            <p class="office-type">Asia Pacific Hub</p>
+            <p class="office-address"><i class="fas fa-map-marker-alt"></i> 8-1 Shibuya, Tokyo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-heading">Frequently Asked <span>Questions</span></h2>
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h3>How do I monetize my videos?</h3>
+            <p>Once you reach 1,000 subscribers and 4,000 watch hours, you can apply for the Partner Program in your Dashboard.</p>
+          </div>
+          <div class="faq-card">
+            <h3>What are the upload limits?</h3>
+            <p>Basic accounts can upload up to 15 minutes per video. Verified accounts have no length limits and can upload up to 4K resolution.</p>
+          </div>
+          <div class="faq-card">
+            <h3>How do I reset my password?</h3>
+            <p>Click "Forgot Password" on the login screen. We will send a secure reset link to your registered email address.</p>
+          </div>
+          <div class="faq-card">
+            <h3>How can I appeal a copyright strike?</h3>
+            <p>Navigate to the "Copyright" tab in your Studio dashboard and click "Submit Counter Notification" on the affected video.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div>`n    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <!-- <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div> -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const tl = gsap.timeline();
+
+    // 1. Background Zoom-Out Effect
+    tl.to(".contact-hero", {
+      "--hero-scale": 1,
+      duration: 2.5,
+      ease: "power2.out",
+      startAt: { "--hero-scale": 1.1 },
+    });
+
+    // 2. Text Reveal Stagger
+    tl.from(
+      ".breadcrumb",
+      {
+        opacity: 1,
+        y: -20,
+        duration: 0.8,
+        ease: "power3.out",
+      },
+      "-=2",
+    );
+
+    tl.from(
+      ".hero-title",
+      {
+        opacity: 1,
+        y: 50,
+        duration: 1,
+        ease: "expo.out",
+      },
+      "-=1.5",
+    );
+
+    tl.from(
+      ".hero-tagline",
+      {
+        opacity: 1,
+        y: 30,
+        duration: 0.8,
+      },
+      "-=1.2",
+    );
+
+    tl.from(
+      ".badge-item",
+      {
+        opacity: 1,
+        scale: 0.8,
+        stagger: 0.2,
+        duration: 0.6,
+        ease: "back.out(1.7)",
+      },
+      "-=0.8",
+    );
+  });
+</script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // 1. Staggered Entrance for Form and Info
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".contact-grid",
+      start: "top 80%",
+    },
+  });
+
+  tl.from(".contact-form-container", {
+    x: -50,
+    opacity: 1,
+    duration: 1,
+    ease: "power3.out",
+  }).from(
+    ".info-block",
+    {
+      x: 50,
+      opacity: 1,
+      stagger: 0.2,
+      duration: 0.8,
+      ease: "power3.out",
+    },
+    "-=0.5",
+  );
+
+  // 2. Form Functionality
+  const contactForm = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("formSubmit");
+
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // UI Feedback
+    const originalText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+
+    // Simulate API Call
+    setTimeout(() => {
+      submitBtn.style.background = "#28a745";
+      submitBtn.innerHTML = "Message Sent! ✅";
+      contactForm.reset();
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.style.background = "#8B0000";
+        submitBtn.innerHTML = originalText;
+      }, 3000);
+    }, 2000);
+  });
+</script>
+
+
+
+
+

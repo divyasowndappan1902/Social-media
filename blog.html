@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You Tube</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./blog.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="menu-item">
+          <a href="./index.html">Home</a>
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item" active>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+
+    <section class="blog-hero">
+      <div class="blog-hero-overlay"></div>
+      <div class="blog-hero-content">
+        <div class="blog-badge">Creator Insights</div>
+        <h1 class="blog-main-title">The <span>Creator</span> Gazette</h1>
+        <p>
+          Master the algorithm, discover new gear, and stay ahead of the digital
+          curve.
+        </p>
+
+        <div class="search-container">
+          <div class="search-box">
+            <form action="./error.html">
+              <input
+                type="text"
+                id="blogSearch"
+                placeholder="Search for articles, tips, or updates..."
+              />
+              <button id="searchBtn">Search</button>
+            </form>
+          </div>
+          <div id="searchSuggestions" class="search-suggestions"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h2 class="section-label">Featured <span>Insights</span></h2>
+        <div class="featured-flex">
+          <div class="featured-main-card">
+            <div class="card-tag">Editor's Pick</div>
+            <img
+              src="./Assets/marketing gudie_11zon.webp"
+              alt="Marketing Guide"
+            />
+            <div class="featured-overlay-text">
+              <h3>The 2026 Video Marketing Masterguide</h3>
+              <p>
+                Everything you need to know about the evolving landscape of
+                digital storytelling and audience retention.
+              </p>
+              <a href="./error.html">
+                <button class="read-btn">Read Masterguide</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="featured-side-list">
+            <div class="side-item">
+              <span class="category">Creator Tips</span>
+              <h4>5 Audio Secrets for Viral Shorts</h4>
+            </div>
+            <div class="side-item">
+              <span class="category">Gear News</span>
+              <h4>Top 3 Mirrorless Cameras for Beginners</h4>
+            </div>
+            <div class="side-item">
+              <span class="category">SEO</span>
+              <h4>How to Hack the 2026 Algorithm</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-posts">
+      <div class="container">
+        <h2 class="section-label">Latest <span>Stories</span></h2>
+        <div class="blog-grid" id="blogGrid"></div>
+      </div>
+    </section>
+
+    <section class="trending-categories-section">
+      <div class="container">
+        <h2 class="section-label">Trending <span>Topics</span></h2>
+        <div class="category-chips-grid">
+          <div class="category-chip">
+            <i class="fas fa-camera"></i>
+            <h3>Gear Reviews</h3>
+          </div>
+          <div class="category-chip">
+            <i class="fas fa-chart-line"></i>
+            <h3>Algorithm Secrets</h3>
+          </div>
+          <div class="category-chip">
+            <i class="fas fa-film"></i>
+            <h3>Video Editing</h3>
+          </div>
+          <div class="category-chip">
+            <i class="fas fa-users"></i>
+            <h3>Audience Growth</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="creator-spotlight-section">
+      <div class="container">
+        <h2 class="section-label">Creator <span>Spotlight</span></h2>
+        <div class="spotlight-grid">
+          <div class="spotlight-card">
+            <div class="spotlight-avatar" style="background-image: url('./Assets/user1_11zon.webp');"></div>
+            <h3>Sarah Jenkins</h3>
+            <p class="spotlight-role">SEO Expert</p>
+            <p class="spotlight-bio">Helping creators hack the algorithm and double their views.</p>
+            <a href="#" class="spotlight-btn">Read Articles</a>
+          </div>
+          <div class="spotlight-card">
+            <div class="spotlight-avatar" style="background-image: url('./Assets/user2_11zon.webp');"></div>
+            <h3>David Chen</h3>
+            <p class="spotlight-role">Cinematographer</p>
+            <p class="spotlight-bio">Expert gear reviews and advanced lighting tutorials.</p>
+            <a href="#" class="spotlight-btn">Read Articles</a>
+          </div>
+          <div class="spotlight-card">
+            <div class="spotlight-avatar" style="background-image: url('./Assets/user3_11zon.webp');"></div>
+            <h3>Elena Rodriguez</h3>
+            <p class="spotlight-role">Community Manager</p>
+            <p class="spotlight-bio">Strategies for building a loyal and engaged subscriber base.</p>
+            <a href="#" class="spotlight-btn">Read Articles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="creator-toolkit-section">
+      <div class="container">
+        <h2 class="section-label">Creator <span>Toolkit</span></h2>
+        <div class="toolkit-grid">
+          <div class="toolkit-card">
+            <div class="toolkit-icon"><i class="fas fa-file-pdf"></i></div>
+            <div class="toolkit-info">
+              <h3>The Ultimate Lighting Guide</h3>
+              <p>Free PDF Download (2.4 MB)</p>
+            </div>
+            <button class="download-btn"><i class="fas fa-download"></i></button>
+          </div>
+          <div class="toolkit-card">
+            <div class="toolkit-icon"><i class="fas fa-file-alt"></i></div>
+            <div class="toolkit-info">
+              <h3>Premiere Pro Cheat Sheet</h3>
+              <p>Keyboard shortcuts (1.1 MB)</p>
+            </div>
+            <button class="download-btn"><i class="fas fa-download"></i></button>
+          </div>
+          <div class="toolkit-card">
+            <div class="toolkit-icon"><i class="fas fa-check-square"></i></div>
+            <div class="toolkit-info">
+              <h3>2026 YouTube SEO Checklist</h3>
+              <p>Step-by-step PDF guide (3.5 MB)</p>
+            </div>
+            <button class="download-btn"><i class="fas fa-download"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-overlay"></div>
+      <div class="newsletter-container">
+        <div class="newsletter-card">
+          <div class="newsletter-header">
+            <div class="pulse-icon">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h2>The <span>Creator</span> Insider</h2>
+            <p>
+              Join 50k+ creators. Get the latest algorithm updates, monetization
+              hacks, and gear reviews delivered to your inbox weekly.
+            </p>
+          </div>
+
+          <form
+            id="creatorNewsletter"
+            class="newsletter-form"
+            action="./error.html"
+          >
+            <div class="input-group">
+              <input
+                type="email"
+                id="userEmail"
+                placeholder="Enter your creator email"
+                required
+              />
+              <button type="submit" id="submitBtn">
+                <span>Subscribe</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          <p class="privacy-note">
+            Respecting your inbox since 2024. No spam, ever.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    </div>`n    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <!-- <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div> -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  // 1. Blog Post Data
+  const postData = [
+    {
+      title: "Lighting Tips for Pro Content",
+      summary:
+        "How to look cinematic on a budget using basic home lighting kits.",
+      img: "./Assets/Lighting Tips for Pro Content_11zon_11zon.webp",
+    },
+    {
+      title: "Managing Your Burnout",
+      summary:
+        "Why creators fail and how to maintain a sustainable upload schedule.",
+      img: "./Assets/Managing Your Burnout_11zon_11zon.webp",
+    },
+    {
+      title: "Thumbnail Psychology",
+      summary:
+        "The science behind high CTR and why colors matter more than you think.",
+      img: "./Assets/Thumbnail Psychology_11zon_11zon.webp",
+    },
+    {
+      title: "YouTube SEO in 2026",
+      summary:
+        "Optimizing your titles and descriptions for the latest AI-driven search.",
+      img: "./Assets/2026 you tuber_11zon.webp",
+    },
+    {
+      title: "Monetizing Shorts",
+      summary:
+        "A deep dive into the revenue potential of vertical short-form video.",
+      img: "./Assets/Monetizing Shorts_11zon_11zon.webp",
+    },
+    {
+      title: "Collaboration Strategies",
+      summary:
+        "How to network with other creators to boost your subscriber count.",
+      img: "./Assets/Collaboration Strategies_11zon_11zon.webp",
+    },
+  ];
+
+  // 2. Inject Grid Items
+  const grid = document.getElementById("blogGrid");
+  postData.forEach((post) => {
+    grid.innerHTML += `
+        <div class="blog-card">
+            <img src="${post.img}" alt="Blog Image">
+            <div class="blog-card-content">
+                <h3>${post.title}</h3>
+                <p>${post.summary}</p>
+                <a href="./error.html" class="read-more-link">Read More →</a>
+            </div>
+        </div>
+    `;
+  });
+
+  // 3. GSAP Scroll Animations
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Featured Stagger
+  gsap.from(".featured-main-card", {
+    scrollTrigger: ".featured-section",
+    x: -50,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  gsap.from(".side-item", {
+    scrollTrigger: ".featured-section",
+    x: 100,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  // Grid Stagger
+  gsap.from(".blog-card", {
+    scrollTrigger: {
+      trigger: ".blog-grid",
+      start: "top 80%",
+    },
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+</script>
+
+<script>
+  // Register ScrollTrigger
+  gsap.registerPlugin(ScrollTrigger);
+
+  // 1. Entrance Animation
+  gsap.from(".newsletter-card", {
+    scrollTrigger: {
+      trigger: ".newsletter-section",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: 50,
+    duration: 1.2,
+    ease: "power3.out",
+  });
+
+  // 2. Form Submission Functionality
+  const newsForm = document.getElementById("creatorNewsletter");
+  const subBtn = document.getElementById("submitBtn");
+
+  newsForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const originalText = subBtn.innerHTML;
+
+    // Disable button & show loading
+    subBtn.disabled = true;
+    subBtn.innerHTML = "<span>Subscribing...</span>";
+
+    // Simulate API call
+    setTimeout(() => {
+      subBtn.style.background = "#28a745"; // Success green
+      subBtn.innerHTML = "<span>Joined! ✅</span>";
+
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        newsForm.reset();
+        subBtn.disabled = false;
+        subBtn.style.background = "#8B0000";
+        subBtn.innerHTML = originalText;
+      }, 3000);
+    }, 1500);
+  });
+</script>
+
+<script>
+  // Function to handle the redirection
+  function redirectToError() {
+    window.location.href = "error.html";
+  }
+
+  // Attach the function to all side-item classes
+  document.addEventListener("DOMContentLoaded", () => {
+    const sideItems = document.querySelectorAll(".side-item");
+
+    sideItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        // Optional: Add a small GSAP "click" effect before redirecting
+        gsap.to(item, {
+          scale: 0.95,
+          duration: 0.1,
+          onComplete: redirectToError,
+        });
+      });
+    });
+  });
+</script>
+
+
+
+
+
+

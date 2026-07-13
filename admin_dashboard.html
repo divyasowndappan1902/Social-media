@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Stackly</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./auth-extras.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="dashboard-body">
+
+    <!-- Left Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./Assets/logo.webp" alt="Stackly Logo" />
+        </a>
+      </div>
+      <ul id="sidebar-menu">
+        <li><a href="./error.html" class="active" data-target="dashboard"><i class="fa-solid fa-chart-line"></i> Dashboard Overview</a></li>
+        <li><a href="./error.html" data-target="orders"><i class="fa-solid fa-box-open"></i> Manage Orders</a></li>
+        <li><a href="./error.html" data-target="inventory"><i class="fa-solid fa-tags"></i> Product Inventory</a></li>
+        <li><a href="./error.html" data-target="customers"><i class="fa-solid fa-users"></i> Customers</a></li>
+        <li><a href="./error.html" data-target="settings"><i class="fa-solid fa-gear"></i> Settings</a></li>
+        <li style="margin-top: 30px;"><a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Dashboard Area -->
+    <main class="dashboard-main">
+      
+      <!-- Topbar Header -->
+      <header class="dashboard-topbar">
+        <div style="display:flex; align-items:center;">
+          <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+          <h1>Welcome Back, Admin!</h1>
+        </div>
+        <div class="dashboard-profile">
+          <div class="profile-info">
+            <div class="profile-name">System Admin</div>
+            <div class="profile-email">admin@stackly.com</div>
+          </div>
+          <div class="profile-avatar">A</div>
+        </div>
+      </header>
+      
+      <div class="dashboard-content" id="view-dashboard">
+        <!-- 4 Stats Cards -->
+        <div class="dashboard-stats" data-aos="fade-up" data-aos-duration="1000">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+            <div class="stat-details">
+              <h4>Total Revenue</h4>
+              <div class="stat-value">$24,500</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" style="color: #ffb74d; background: rgba(255, 183, 77, 0.1);"><i class="fa-solid fa-box"></i></div>
+            <div class="stat-details">
+              <h4>Active Orders</h4>
+              <div class="stat-value">128</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" style="color: #4caf50; background: rgba(76, 175, 80, 0.1);"><i class="fa-solid fa-tags"></i></div>
+            <div class="stat-details">
+              <h4>Total Products</h4>
+              <div class="stat-value">450</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" style="color: #00bcd4; background: rgba(0, 188, 212, 0.1);"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-details">
+              <h4>New Customers</h4>
+              <div class="stat-value">34</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="dashboard-actions">
+          <a href="./error.html" class="btn-primary">+ ADD NEW PRODUCT</a>
+          <a href="./error.html" class="btn-secondary">DOWNLOAD REPORT</a>
+        </div>
+
+        <!-- Data Table -->
+        <div class="dashboard-table-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="table-header">
+            <h3>Recent Orders</h3>
+            <a href="./error.html">View All &rarr;</a>
+          </div>
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#ORD-8942</td>
+                <td>Sarah Jenkins</td>
+                <td>Jul 07, 2026</td>
+                <td>$124.50</td>
+                <td><span class="status-badge status-pending">Pending</span></td>
+                <td><a href="./error.html" class="action-link">Details</a></td>
+              </tr>
+              <tr>
+                <td>#ORD-8941</td>
+                <td>David O'Connor</td>
+                <td>Jul 06, 2026</td>
+                <td>$49.99</td>
+                <td><span class="status-badge status-completed">Completed</span></td>
+                <td><a href="./error.html" class="action-link">Details</a></td>
+              </tr>
+              <tr>
+                <td>#ORD-8940</td>
+                <td>Emily Chen</td>
+                <td>Jul 06, 2026</td>
+                <td>$89.00</td>
+                <td><span class="status-badge status-completed">Completed</span></td>
+                <td><a href="./error.html" class="action-link">Details</a></td>
+              </tr>
+              <tr>
+                <td>#ORD-8939</td>
+                <td>Michael Brown</td>
+                <td>Jul 05, 2026</td>
+                <td>$34.50</td>
+                <td><span class="status-badge status-pending">Pending</span></td>
+                <td><a href="./error.html" class="action-link">Details</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+              <!-- System Health Monitoring -->
+        <div class="dashboard-table-container" style="margin-top: 30px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <h3>System Health: <span style="color: #4caf50;">All Systems Operational</span></h3>
+            <p style="color: #aaa; margin-top: 5px;">Server Uptime: 99.98% | API Status: Normal</p>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-size: 24px; color: #fff;">1,245</div>
+            <div style="color: #aaa; font-size: 14px;">Active Users Online</div>
+          </div>
+        </div>
+        <!-- Traffic Analytics -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <div class="table-header"><h3>Traffic Sources</h3></div>
+          <div style="display: flex; gap: 20px;">
+             <div style="flex:1; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                <h4 style="color: #ffb74d;">Organic Search</h4>
+                <p style="font-size: 24px; margin: 10px 0;">45%</p>
+                <p style="color: #4caf50; font-size: 14px;">&uarr; 5% this week</p>
+             </div>
+             <div style="flex:1; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                <h4 style="color: #00bcd4;">Social Media</h4>
+                <p style="font-size: 24px; margin: 10px 0;">35%</p>
+                <p style="color: #ff4757; font-size: 14px;">&darr; 2% this week</p>
+             </div>
+             <div style="flex:1; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                <h4 style="color: #4caf50;">Direct/Referral</h4>
+                <p style="font-size: 24px; margin: 10px 0;">20%</p>
+                <p style="color: #4caf50; font-size: 14px;">&uarr; 1% this week</p>
+             </div>
+          </div>
+        </div>
+        <!-- Recent Admin Activity Log -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <div class="table-header"><h3>Recent Admin Activity</h3></div>
+          <div style="display: flex; flex-direction: column; gap: 15px;">
+             <div style="display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <div><span style="color: #ff4757; font-weight: bold;">Admin Jane</span> updated pricing for <span style="color: #fff;">4K Drone</span></div>
+                <div style="color: #aaa; font-size: 12px;">10 mins ago</div>
+             </div>
+             <div style="display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <div><span style="color: #ff4757; font-weight: bold;">System Admin</span> approved refund for <span style="color: #fff;">Order #ORD-8810</span></div>
+                <div style="color: #aaa; font-size: 12px;">1 hour ago</div>
+             </div>
+             <div style="display: flex; justify-content: space-between; padding: 10px;">
+                <div><span style="color: #ff4757; font-weight: bold;">Admin Bob</span> banned user <span style="color: #fff;">TrollUser99</span></div>
+                <div style="color: #aaa; font-size: 12px;">3 hours ago</div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manage Orders View -->
+      <div class="dashboard-content" id="view-orders" style="display: none;">
+        <div class="dashboard-table-container">
+          <div class="table-header">
+            <h3>Manage All Orders</h3>
+          </div>
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#ORD-8942</td>
+                <td>Sarah Jenkins</td>
+                <td>Jul 07, 2026</td>
+                <td>$124.50</td>
+                <td><span class="status-badge status-pending">Pending</span></td>
+                <td><a href="./error.html" class="action-link">Process</a></td>
+              </tr>
+              <tr>
+                <td>#ORD-8941</td>
+                <td>David O'Connor</td>
+                <td>Jul 06, 2026</td>
+                <td>$49.99</td>
+                <td><span class="status-badge status-completed">Completed</span></td>
+                <td><a href="./error.html" class="action-link">View</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+              <!-- Needs Attention -->
+        <div class="dashboard-table-container" style="margin-top: 30px; border-left: 4px solid #ff4757; background: rgba(255, 71, 87, 0.1);">
+          <h3 style="color: #ff4757;">Action Required: Flagged Orders</h3>
+          <p style="color: #ccc; margin-top: 10px;">3 orders have been flagged by the anti-fraud system and require manual verification.</p>
+          <a href="./error.html" class="btn-primary" style="margin-top: 15px; display: inline-block; background: #ff4757;">Review Orders</a>
+        </div>
+        <!-- Fulfillment Queue -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <div class="table-header"><h3>Fulfillment Queue (Ready to Ship)</h3></div>
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Items</th>
+                <th>Shipping Method</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#ORD-8945</td>
+                <td>Creator Pro Kit (1)</td>
+                <td>Express (Next Day)</td>
+                <td><a href="./error.html" class="btn-primary" style="padding: 6px 12px; font-size: 12px;">Generate Label</a></td>
+              </tr>
+              <tr>
+                <td>#ORD-8946</td>
+                <td>RGB Light Strip (2)</td>
+                <td>Standard</td>
+                <td><a href="./error.html" class="btn-primary" style="padding: 6px 12px; font-size: 12px;">Generate Label</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Refunds & Disputes -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <div class="table-header"><h3>Active Refunds & Disputes</h3><a href="./error.html">View All</a></div>
+          <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+             <div>
+                <h4>Dispute: #ORD-8112 (Item not received)</h4>
+                <p style="color: #aaa; font-size: 14px; margin-top: 5px;">Customer: David O'Connor - Waiting for seller response</p>
+             </div>
+             <a href="./error.html" class="btn-secondary" style="padding: 8px 15px; font-size:12px;">Resolve</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Inventory View -->
+      <div class="dashboard-content" id="view-inventory" style="display: none;">
+        <div class="dashboard-actions" style="margin-bottom: 20px;">
+          <a href="./error.html" class="btn-primary">+ ADD NEW PRODUCT</a>
+        </div>
+        <div class="dashboard-table-container">
+          <div class="table-header">
+            <h3>Product Inventory</h3>
+          </div>
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>SKU</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Creator Pro Kit</td>
+                <td>PRD-001</td>
+                <td>$299.00</td>
+                <td>45</td>
+                <td><a href="./error.html" class="action-link" style="color: #4caf50;">Edit</a></td>
+              </tr>
+              <tr>
+                <td>RGB Light Strip</td>
+                <td>PRD-042</td>
+                <td>$29.99</td>
+                <td><span style="color: #ff4757;">Out of Stock</span></td>
+                <td><a href="./error.html" class="action-link" style="color: #4caf50;">Edit</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+              <!-- Low Stock Alerts -->
+        <div class="dashboard-table-container" style="margin-top: 30px; border-left: 4px solid #ffb74d; background: rgba(255, 183, 77, 0.1);">
+          <h3 style="color: #ffb74d;">Low Stock Alerts</h3>
+          <p style="color: #ccc; margin-top: 10px;">The following items are below the 10-unit threshold:</p>
+          <ul style="color: #fff; margin-top: 10px; margin-left: 20px;">
+            <li>Wireless Mic Pro (3 left)</li>
+            <li>RGB Light Strip (Out of Stock)</li>
+          </ul>
+          <a href="./error.html" class="btn-secondary" style="margin-top: 15px; display: inline-block; color: #ffb74d; border-color: #ffb74d;">Reorder Stock</a>
+        </div>
+        <!-- Top Selling Products -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <div class="table-header"><h3>Top Sellers (This Month)</h3></div>
+          <div style="display: flex; gap: 20px;">
+             <div style="flex:1; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; text-align: center;">
+                <h2 style="color: #4caf50; font-size: 32px;">#1</h2>
+                <h4 style="margin: 10px 0;">Creator Pro Kit</h4>
+                <p style="color: #aaa; font-size: 14px;">1,204 Units Sold</p>
+             </div>
+             <div style="flex:1; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; text-align: center;">
+                <h2 style="color: #00bcd4; font-size: 32px;">#2</h2>
+                <h4 style="margin: 10px 0;">4K Drone</h4>
+                <p style="color: #aaa; font-size: 14px;">850 Units Sold</p>
+             </div>
+          </div>
+        </div>
+        <!-- Draft / Scheduled Products -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <div class="table-header"><h3>Draft & Scheduled Launches</h3></div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+             <div>
+                <h4>Next-Gen Action Camera</h4>
+                <p style="color: #aaa; font-size: 14px;">Scheduled for: Aug 01, 2026</p>
+             </div>
+             <span style="padding: 4px 10px; background: rgba(0, 188, 212, 0.2); color: #00bcd4; border-radius: 4px; font-size: 12px;">Scheduled</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Customers View -->
+      <div class="dashboard-content" id="view-customers" style="display: none;">
+        <div class="dashboard-table-container">
+          <div class="table-header">
+            <h3>Customer Directory</h3>
+          </div>
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Total Spent</th>
+                <th>Joined</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sarah Jenkins</td>
+                <td>sarah.j@example.com</td>
+                <td>$1,240.00</td>
+                <td>Jan 2025</td>
+                <td><a href="./error.html" class="action-link">Profile</a></td>
+              </tr>
+              <tr>
+                <td>David O'Connor</td>
+                <td>david.o@example.com</td>
+                <td>$345.50</td>
+                <td>Mar 2026</td>
+                <td><a href="./error.html" class="action-link">Profile</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+              <!-- VIP / Top Spenders -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <div class="table-header"><h3>VIP Customers (High LTV)</h3></div>
+          <div style="display: flex; gap: 20px;">
+             <div style="flex:1; background: rgba(255, 215, 0, 0.1); border: 1px solid rgba(255, 215, 0, 0.3); padding: 15px; border-radius: 8px;">
+                <h4 style="color: gold;"><i class="fa-solid fa-crown"></i> Sarah Jenkins</h4>
+                <p style="color: #fff; font-size: 14px; margin-top: 10px;">Lifetime Value: ,450</p>
+                <p style="color: #aaa; font-size: 12px; margin-top: 5px;">45 Total Orders</p>
+             </div>
+             <div style="flex:1; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                <h4><i class="fa-solid fa-star" style="color: silver;"></i> Emily Chen</h4>
+                <p style="color: #fff; font-size: 14px; margin-top: 10px;">Lifetime Value: ,900</p>
+                <p style="color: #aaa; font-size: 12px; margin-top: 5px;">32 Total Orders</p>
+             </div>
+          </div>
+        </div>
+        <!-- Customer Support Tickets -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <div class="table-header"><h3>Open Support Tickets</h3><a href="./error.html">View All (12)</a></div>
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>Ticket ID</th>
+                <th>Customer</th>
+                <th>Subject</th>
+                <th>Priority</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#TK-104</td>
+                <td>David O'Connor</td>
+                <td>Missing accessory in package</td>
+                <td><span style="color: #ffb74d;">High</span></td>
+                <td><a href="./error.html" class="action-link">Reply</a></td>
+              </tr>
+              <tr>
+                <td>#TK-105</td>
+                <td>Michael Brown</td>
+                <td>How to apply discount code?</td>
+                <td><span style="color: #4caf50;">Low</span></td>
+                <td><a href="./error.html" class="action-link">Reply</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Flagged / Suspended Accounts -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <h3 style="color: #ff4757; margin-bottom: 15px;">Flagged Accounts</h3>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+             <div>
+                <h4>TrollUser99</h4>
+                <p style="color: #aaa; font-size: 14px;">Flagged for: Suspicious payment activity</p>
+             </div>
+             <a href="./error.html" class="btn-secondary" style="color: #ff4757; border-color: #ff4757;">Review Ban</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Settings View -->
+      <div class="dashboard-content" id="view-settings" style="display: none;">
+        <div class="dashboard-table-container" style="padding: 30px;">
+          <h3 style="margin-bottom: 20px;">System Settings</h3>
+          <p style="color: #aaa; margin-bottom: 20px;">Configure admin permissions and site-wide preferences.</p>
+          <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+             <a href="./error.html" class="btn-primary">Manage Admins</a>
+             <a href="./error.html" class="btn-secondary">Store Configuration</a>
+             <a href="./error.html" class="btn-secondary">Backup Data</a>
+          </div>
+        </div>
+              <!-- Global Site Configuration -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <h3 style="margin-bottom: 20px;">Global Configuration</h3>
+          <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 15px;">
+             <div>
+                <h4>Maintenance Mode</h4>
+                <p style="color: #aaa; font-size: 14px;">Temporarily disable the storefront for users.</p>
+             </div>
+             <div style="width: 40px; height: 20px; background: #333; border-radius: 10px; position: relative;">
+                <div style="width: 16px; height: 16px; background: #aaa; border-radius: 50%; position: absolute; top: 2px; left: 2px;"></div>
+             </div>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+             <div>
+                <h4>Accept New Registrations</h4>
+                <p style="color: #aaa; font-size: 14px;">Allow new customers to create accounts.</p>
+             </div>
+             <div style="width: 40px; height: 20px; background: #ff4757; border-radius: 10px; position: relative;">
+                <div style="width: 16px; height: 16px; background: #fff; border-radius: 50%; position: absolute; top: 2px; right: 2px;"></div>
+             </div>
+          </div>
+        </div>
+        <!-- Payment Gateway Integrations -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <h3 style="margin-bottom: 20px;">Payment Gateways</h3>
+          <div style="display: flex; gap: 20px;">
+             <div style="flex:1; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                   <h4 style="color: #00bcd4;">Stripe (Cards)</h4>
+                   <p style="color: #4caf50; font-size: 12px; margin-top: 5px;">Active & Connected</p>
+                </div>
+                <a href="./error.html" class="btn-secondary" style="padding: 4px 10px; font-size: 12px;">Configure</a>
+             </div>
+             <div style="flex:1; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                   <h4 style="color: #ffb74d;">PayPal Express</h4>
+                   <p style="color: #4caf50; font-size: 12px; margin-top: 5px;">Active & Connected</p>
+                </div>
+                <a href="./error.html" class="btn-secondary" style="padding: 4px 10px; font-size: 12px;">Configure</a>
+             </div>
+          </div>
+        </div>
+        <!-- Admin Roles & Permissions -->
+        <div class="dashboard-table-container" style="margin-top: 30px;">
+          <div class="table-header"><h3>Admin Roles & Staff</h3><a href="./error.html">+ Add Staff</a></div>
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Last Login</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>System Admin (You)</td>
+                <td><span style="color: #ff4757; font-weight: bold;">Super Admin</span></td>
+                <td>Now</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jane Doe</td>
+                <td>Manager</td>
+                <td>2 hours ago</td>
+                <td><a href="./error.html" class="action-link">Edit Permissions</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        // Mobile Sidebar Toggle
+        const menuBtn = document.querySelector(".mobile-menu-btn");
+        const sidebar = document.querySelector(".dashboard-sidebar");
+        if (menuBtn && sidebar) {
+            menuBtn.addEventListener("click", () => {
+                sidebar.classList.toggle("open");
+            });
+        }
+        // Dynamic User Profile
+        const userEmail = localStorage.getItem("userEmail");
+        const userName = localStorage.getItem("userName");
+        if (userEmail) {
+            const emailEls = document.querySelectorAll(".profile-email");
+            const nameEls = document.querySelectorAll(".profile-name");
+            const avatarEls = document.querySelectorAll(".profile-avatar");
+            
+            emailEls.forEach(el => el.textContent = userEmail);
+            nameEls.forEach(el => el.textContent = userName);
+            avatarEls.forEach(el => el.textContent = userName.charAt(0).toUpperCase());
+        }
+        const links = document.querySelectorAll("#sidebar-menu a[data-target]");
+        const views = document.querySelectorAll(".dashboard-content");
+
+        links.forEach(link => {
+          link.addEventListener("click", function(e) {
+            e.preventDefault();
+            
+            // Remove active from all links
+            links.forEach(l => l.classList.remove("active"));
+            // Add active to clicked
+            this.classList.add("active");
+
+            // Hide all views
+            views.forEach(v => v.style.display = "none");
+            
+            // Show targeted view
+            const targetId = "view-" + this.getAttribute("data-target");
+            const targetView = document.getElementById(targetId);
+            if (targetView) {
+              targetView.style.display = "block";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+

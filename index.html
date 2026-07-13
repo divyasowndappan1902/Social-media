@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You Tube</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="menu-item" active>
+          <a href="./index.html">Home</a>
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+    <!-- hero -->
+    <section
+      id="hero"
+      class="hero-container"
+      role="region"
+      aria-label="YouTube Creator Hub"
+    >
+      <div class="hero-wrapper">
+        <div class="hero-text">
+          <div class="stat-badge">
+            <span>10K+ Creators</span> • <span>1M+ Videos</span>
+          </div>
+          <h1 class="hero-title">
+            Discover, Watch & <br />
+            <span class="accent-text">Stream Amazing</span> Content
+          </h1>
+          <p class="hero-description">
+            The ultimate destination for next-gen creators. Watch high-fidelity
+            streams, share your story, and join the global community.
+          </p>
+          <div class="hero-btns">
+            <a href="./error.html">
+              <button class="btn-watch" aria-label="Start Watching">
+                Start Watching
+              </button>
+            </a>
+
+            <a href="./error.html">
+              <button class="btn-creator" aria-label="Join as Creator">
+                Become a Creator
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="mockup-container">
+            <img
+              src="./Assets/Live Stream gaming_11zon.webp"
+              alt="streaming"
+              class="main-image"
+            />
+            <a href="./error.html">
+              <div class="play-overlay">
+                <div class="play-icon"></div>
+              </div>
+            </a>
+          <button class="filter-btn" data-filter="tech">Tech</button>
+          <button class="filter-btn" data-filter="gaming">Gaming</button>
+          <button class="filter-btn" data-filter="music">Music</button>
+          <button class="filter-btn" data-filter="science">Science</button>
+          <button class="filter-btn" data-filter="travel">Travel</button>
+          <button class="filter-btn" data-filter="fitness">Fitness</button>
+          <button class="filter-btn" data-filter="food">Food</button>
+        </div>
+      </div>
+
+      <div class="video-grid" id="videoGrid">
+        <div class="video-card" data-category="tech">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/tech lab_11zon.webp"
+              alt="Tech Video"
+              class="thumb"
+            />
+          
+            <span class="duration">04:15</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Midnight Melodies - Visualizer Mix</h4>
+            <p class="v-creator">Aura Beats</p>
+            <p class="v-stats">2.4M views • 1 day ago</p>
+          </div>
+        </div>
+        <div class="video-card" data-category="tech">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/Tech Video 2_11zon_11zon.webp"
+              alt="Tech Video"
+              class="thumb"
+            />
+            <span class="duration">12:45</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Next-Gen AI</h4>
+            <p class="v-creator">TechLabs Pro</p>
+            <p class="v-stats">1.6M views • 6 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="gaming">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/gaming video 2_11zon_11zon.webp"
+              alt="Gaming Video"
+              class="thumb"
+            />
+            <span class="duration">22:10</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">The Most Realistic Open World Game 2025</h4>
+            <p class="v-creator">GamerSync</p>
+            <p class="v-stats">650K views • 1 yr ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="music">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/music2_11zon_11zon.webp"
+              alt="Music Video"
+              class="thumb"
+            />
+            <span class="duration">04:15</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Midnight Beats - live Concert</h4>
+            <p class="v-creator">Aura Beats</p>
+            <p class="v-stats">6.9M views • 4 day ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="tech">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/Tech Video 3_11zon.webp"
+              alt="Medical Device"
+              class="thumb"
+            />
+            <span class="duration">15:30</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">The Future of Wearable Glucose Monitors</h4>
+            <p class="v-creator">BioHealth Solutions</p>
+            <p class="v-stats">420K views • 3 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="tech">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/Tech Video 4_11zon.webp"
+              alt="Robotics"
+              class="thumb"
+            />
+            <span class="duration">08:45</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">
+              Robotic Surgical Arms: Precision Engineering
+            </h4>
+            <p class="v-creator">Precision Labs</p>
+            <p class="v-stats">1.1M views • 12 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="science">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/science1_11zon.webp"
+              alt="Lab Equipment"
+              class="thumb"
+            />
+          
+            <span class="duration">18:20</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Hidden Waterfalls of the Pacific Northwest</h4>
+            <p class="v-creator">Wanderlust Journal</p>
+            <p class="v-stats">340K views • 6 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="food">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/pastadood_11zon_11zon.webp"
+              alt="Cooking"
+              class="thumb"
+            />
+            <span class="duration">09:50</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">The Ultimate 15-Minute Pasta Recipe</h4>
+            <p class="v-creator">Chef’s Table</p>
+            <p class="v-stats">890K views • 7 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="travel">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/kyoto travel2_11zon_11zon.webp"
+              alt="Japan"
+              class="thumb"
+            />
+            <span class="duration">25:00</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">A Week in Kyoto: Tradition Meets Future</h4>
+            <p class="v-creator">Nomad Tales</p>
+            <p class="v-stats">2.1M views • 2 days ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="science">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/science 2_11zon_11zon.webp"
+              alt="Space"
+              class="thumb"
+            />
+            
+            <span class="duration">15:40</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">5 Common Squat Mistakes You're Making</h4>
+            <p class="v-creator">Iron Strength</p>
+            <p class="v-stats">420K views • 3 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="food">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/biryani_11zon.webp"
+              alt="Cooking Video"
+              class="thumb"
+            />
+            <span class="duration">09:50</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Recipe of Biryani</h4>
+            <p class="v-creator">Chef's Table</p>
+            <p class="v-stats">9.3M views • 18 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="food">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/foodtokyo_11zon_11zon.webp"
+              alt="Street Food Video"
+              class="thumb"
+            />
+            <span class="duration">18:30</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Exploring Tokyo's Best Hidden Street Food</h4>
+            <p class="v-creator">Flavor Finders</p>
+            <p class="v-stats">2.1M views • 2 days ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="travel">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/travel3_11zon.webp"
+              alt="Travel Video"
+              class="thumb"
+            />
+            <span class="duration">14:20</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">China Greatwall</h4>
+            <p class="v-creator">Wanderlust Journal</p>
+            <p class="v-stats">594K views • 9 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="science">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/science3_11zon_11zon.webp"
+              alt="Science Video"
+              class="thumb"
+            />
+            <span class="duration">11:05</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Earth spheres </h4>
+            <p class="v-creator">Cosmic Chronicles</p>
+            <p class="v-stats">6.4M views • 1 day ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="music">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/music 3_11zon.webp"
+              alt="DJ Set"
+              class="thumb"
+            />
+            <span class="duration">58:20</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Sunset House Mix 2026 - Live from Ibiza</h4>
+            <p class="v-creator">Vibe Central</p>
+            <p class="v-stats">1.1M views • 3 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="music">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/music 4_11zon.webp"
+              alt="Studio Recording"
+              class="thumb"
+            />
+            <span class="duration">03:45</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">
+              Acoustic Sessions: Urban Soul (Official Video)
+            </h4>
+            <p class="v-creator">Lyric Records</p>
+            <p class="v-stats">500K views • 12 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="gaming">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/gaming video 3_11zon.webp"
+              alt="Esports"
+              class="thumb"
+            />
+            <span class="duration">15:10</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Top 10 Insane Clutch Plays - Pro League S5</h4>
+            <p class="v-creator">Esports Daily</p>
+            <p class="v-stats">2.3M views • 6 hours ago</p>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="gaming">
+          <div class="thumbnail-container">
+            <img
+              src="./Assets/gaming video 4_11zon.webp"
+              alt="RPG Gameplay"
+              class="thumb"
+            />
+            <span class="duration">42:15</span>
+            </div>
+          <div class="video-info">
+            <h4 class="v-title">Cyber Odyssey: Full Stealth Walkthrough</h4>
+            <p class="v-creator">QuestMaster</p>
+            <p class="v-stats">950K views • 1 day ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="creators-section">
+      <h2 class="section-heading">Featured Creators</h2>
+      <div class="creator-container" id="creatorContainer"></div>
+    </section>
+
+    <section class="features-section">
+      <h2 class="section-heading">Platform Features</h2>
+      <div class="feature-container" id="featureContainer"></div>
+    </section>
+
+    <section class="categories-section">
+      <h2 class="section-heading">Popular Categories</h2>
+      <div class="category-container" id="categoryContainer"></div>
+    </section>
+
+    <section class="workflow-section">
+      <h2 class="section-heading">How the Platform Works</h2>
+      <div class="workflow-container" id="workflowContainer"></div>
+    </section>
+
+    <section class="highlights-section">
+      <h2 class="section-heading">Community Highlights</h2>
+      <div class="stats-row" id="statsRow"></div>
+      <div class="testimonials-grid" id="testimonialGrid"></div>
+    </section>
+
+    <section class="blog-section">
+      <h2 class="section-heading">Creator Tips & Resources</h2>
+      <div class="blog-grid" id="blogGrid"></div>
+    </section>
+
+    <section class="shorts-section">
+      <h2 class="section-heading">Trending <span>Shorts</span></h2>
+      <div class="shorts-grid">
+        <div class="short-card">
+          <img src="./Assets/shorts1_11zon.webp" alt="Short 1" class="short-thumb" />
+          <div class="short-overlay">
+            <h4 class="short-title">POV: You bought a RED camera</h4>
+            <p class="short-views">2.4M views</p>
+          </div>
+        </div>
+        <div class="short-card">
+          <img src="./Assets/shorts2_11zon.webp" alt="Short 2" class="short-thumb" />
+          <div class="short-overlay">
+            <h4 class="short-title">Top 3 Premiere Shortcuts</h4>
+            <p class="short-views">850K views</p>
+          </div>
+        </div>
+        <div class="short-card">
+          <img src="./Assets/f2_11zon.webp" alt="Short 3" class="short-thumb" />
+          <div class="short-overlay">
+            <h4 class="short-title">A day in my life</h4>
+            <p class="short-views">1.1M views</p>
+          </div>
+        </div>
+        <div class="short-card">
+          <img src="./Assets/f3_11zon.webp" alt="Short 4" class="short-thumb" />
+          <div class="short-overlay">
+            <h4 class="short-title">Best budget mics 2026</h4>
+            <p class="short-views">500K views</p>
+          </div>
+        </div>
+        <div class="short-card">
+          <img src="./Assets/f4_11zon.webp" alt="Short 5" class="short-thumb" />
+          <div class="short-overlay">
+            <h4 class="short-title">Setup tour!</h4>
+            <p class="short-views">3.2M views</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="live-section">
+      <h2 class="section-heading">Live <span>Now</span></h2>
+      <div class="video-grid">
+        <div class="video-card live-card">
+          <div class="thumbnail-container">
+            <img src="./Assets/Live Stream gaming_11zon.webp" alt="Live Gaming" class="thumb" />
+            <span class="live-badge"><i class="fas fa-circle"></i> LIVE</span>
+            <span class="viewers-badge">🔴 14.5K</span>
+          </div>
+          <div class="video-info">
+            <h4 class="v-title">CS:GO World Championship Finals 2026</h4>
+            <p class="v-creator">EsportsTV <i class="fas fa-check-circle verified-icon"></i></p>
+            <p class="v-stats">Started 2 hours ago</p>
+          </div>
+        </div>
+        <div class="video-card live-card">
+          <div class="thumbnail-container">
+            <img src="./Assets/Live Stream podcast_11zon.webp" alt="Live Podcast" class="thumb" />
+            <span class="live-badge"><i class="fas fa-circle"></i> LIVE</span>
+            <span class="viewers-badge">🔴 3.2K</span>
+          </div>
+          <div class="video-info">
+            <h4 class="v-title">Creator Talk #45: The Algorithm Update</h4>
+            <p class="v-creator">Creator Insider</p>
+            <p class="v-stats">Started 45 mins ago</p>
+          </div>
+        </div>
+        <div class="video-card live-card">
+          <div class="thumbnail-container">
+            <img src="./Assets/Live Stream meditation_11zon.webp" alt="Live Lofi" class="thumb" />
+            <span class="live-badge"><i class="fas fa-circle"></i> LIVE</span>
+            <span class="viewers-badge">🔴 8.9K</span>
+          </div>
+          <div class="video-info">
+            <h4 class="v-title">lofi hip hop radio - beats to relax/study to</h4>
+            <p class="v-creator">Lofi Girl</p>
+            <p class="v-stats">Started 24 hours ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="premium-section">
+      <h2 class="section-heading">Upgrade to <span>Premium</span></h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Free Tier</h3>
+          <h2 class="price">$0<span>/mo</span></h2>
+          <ul class="features-list">
+            <li><i class="fas fa-check"></i> Standard 1080p Streaming</li>
+            <li><i class="fas fa-check"></i> Ad-supported viewing</li>
+            <li><i class="fas fa-check"></i> Community access</li>
+          </ul>
+          <button class="btn-outline">Current Plan</button>
+        </div>
+        <div class="pricing-card pro-tier">
+          <div class="popular-badge">Most Popular</div>
+          <h3>Pro Plus</h3>
+          <h2 class="price">$11.99<span>/mo</span></h2>
+          <ul class="features-list">
+            <li><i class="fas fa-check"></i> Ad-free experience</li>
+            <li><i class="fas fa-check"></i> 4K HDR & Background Play</li>
+            <li><i class="fas fa-check"></i> Exclusive Creator Badges</li>
+            <li><i class="fas fa-check"></i> Download for offline</li>
+          </ul>
+          <button class="btn-primary">Upgrade Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-content">
+        <h1>Start Your Creator Journey Today</h1>
+        <p>
+          Join over 1M+ creators and start sharing your story with the world.
+        </p>
+        <div class="cta-form">
+          <form action="./error.html">
+            <input type="email" placeholder="Enter your email address" required/>
+            <button class="join-btn">Join Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    </div>`n    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <!-- <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div> -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  const masterTL = gsap.timeline();
+
+  // Smooth reveal for text
+  masterTL
+    .from(".stat-badge", {
+      opacity: 1,
+      y: -30,
+      duration: 0.8,
+      ease: "back.out(1.7)",
+    })
+    .from(
+      ".hero-title",
+      { opacity: 1, y: 50, duration: 1, ease: "power4.out" },
+      "-=0.5",
+    )
+    .from(".hero-description", { opacity: 1, x: -30, duration: 1 }, "-=0.7")
+    .from(".hero-btns", { opacity: 1, y: 20, duration: 0.8 }, "-=0.6");
+
+  // Cinematic Mockup Zoom-in
+  gsap.from(".mockup-container", {
+    scale: 1.1,
+    opacity: 1,
+    duration: 1.8,
+    ease: "expo.out",
+    delay: 0.5,
+  });
+
+  // Glowing Pulse
+  gsap.to(".play-overlay", {
+    boxShadow: "0 0 40px rgba(139, 0, 0, 0.8)",
+    repeat: -1,
+    yoyo: true,
+    duration: 1.5,
+  });
+
+  // Subtle background glow movement
+  gsap.to(".glow-effect", {
+    scale: 1.2,
+    opacity: 0.5,
+    duration: 4,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut",
+  });
+</script>
+
+<script>
+  const playOverlay = document.querySelector(".play-overlay");
+
+  // Add super animation on hover (scale and pulse)
+  playOverlay.addEventListener("mouseenter", () => {
+    // 1. Scale the dark red background slightly
+    gsap.to(playOverlay, {
+      scale: 1.1,
+      duration: 0.3,
+      ease: "back.out(1.7)",
+    });
+
+    // 2. Play with the play icon itself (e.g., subtle wobble)
+    gsap.to(".play-icon", {
+      x: 0,
+      duration: 0.1,
+      repeat: 3,
+      yoyo: true,
+      delay: 0.1,
+    });
+  });
+
+  // Remove animation on mouse leave
+  playOverlay.addEventListener("mouseleave", () => {
+    gsap.to(playOverlay, {
+      scale: 1,
+      duration: 0.4,
+      ease: "power2.inOut",
+    });
+  });
+</script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animation: Overview Highlights Stagger
+  gsap.from(".highlight-item", {
+    scrollTrigger: {
+      trigger: ".overview-section",
+      start: "top 70%",
+    },
+    y: 50,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  // Animation: Video Cards Entrance
+  gsap.from(".video-card", {
+    scrollTrigger: {
+      trigger: ".trending-section",
+      start: "top 70%",
+    },
+    scale: 0.9,
+    opacity: 1,
+    stagger: 0.1,
+    duration: 0.8,
+    ease: "back.out(1.7)",
+  });
+
+  // Functionality: Video Filtering
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const videoCards = document.querySelectorAll(".video-card");
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Update active button
+      document.querySelector(".filter-btn.active").classList.remove("active");
+      btn.classList.add("active");
+
+      const filter = btn.getAttribute("data-filter");
+
+      videoCards.forEach((card) => {
+        if (filter === "all" || card.getAttribute("data-category") === filter) {
+          gsap.to(card, {
+            display: "block",
+            opacity: 1,
+            scale: 1,
+            duration: 0.4,
+          });
+        } else {
+          gsap.to(card, {
+            display: "none",
+            opacity: 1,
+            scale: 0.8,
+            duration: 0.4,
+          });
+        }
+      });
+    });
+  });
+  document.querySelectorAll(".video-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      window.location.href = "./error.html";
+    });
+  });
+</script>
+
+<script>
+  // 1. Unified Data Object
+  const creatorData = [
+    {
+      name: "Tech Horizon",
+      subs: "1.2M Subscribers",
+      bio: "The latest in consumer electronics and future tech.",
+      img: "./Assets/z1_11zon.webp",
+    },
+    {
+      name: "Code Master",
+      subs: "850K Subscribers",
+      bio: "Deep dives into React, GSAP, and Modern CSS.",
+      img: "./Assets/z2_11zon.webp",
+    },
+    {
+      name: "Studio Vibe",
+      subs: "2.4M Subscribers",
+      bio: "Cinematic storytelling and camera gear reviews.",
+      img: "./Assets/z4_11zon.webp",
+    },
+    {
+      name: "Pixel Gamer",
+      subs: "5M Subscribers",
+      bio: "Daily high-stakes gameplay and live walkthroughs.",
+      img: "./Assets/z3_11zon.webp",
+    },
+    {
+      name: "Gourmet Lab",
+      subs: "3.7M Subscribers",
+      bio: "Unlocking the science behind world-class recipes and street food.",
+      img: "./Assets/z5_11zon.webp",
+    },
+    {
+      name: "Nomad Quest",
+      subs: "1.5M Subscribers",
+      bio: "Budget-friendly guides to the world's most remote destinations.",
+      img: "./Assets/z6_11zon.webp",
+    },
+  ];
+
+  const featureData = [
+    {
+      icon: "📤",
+      title: "4K Uploads",
+      desc: "Upload and process high-fidelity videos in 4K resolution at 60fps.",
+    },
+    {
+      icon: "📡",
+      title: "Global Live",
+      desc: "Stream instantly to millions with ultra-low latency and live chat.",
+    },
+    {
+      icon: "⚡",
+      title: "Shorts Lab",
+      desc: "Create high-impact vertical content with built-in creative tools.",
+    },
+    {
+      icon: "📊",
+      title: "Advanced Metrics",
+      desc: "Track watch time, retention, and audience demographics in real-time.",
+    },
+  ];
+
+  // 2. Populate Creators with Click Functionality
+  const creatorsContainer = document.getElementById("creatorContainer");
+
+  creatorData.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "creator-card";
+    card.style.opacity = "0"; // Set initial state for GSAP
+    card.innerHTML = `
+        <img src="${item.img}" alt="creator">
+        <div class="creator-name">${item.name}</div>
+        <div class="sub-count">${item.subs}</div>
+        <p class="creator-bio">${item.bio}</p>
+        <button class="sub-btn">Subscribe</button>
+    `;
+
+    const btn = card.querySelector(".sub-btn");
+
+    btn.addEventListener("click", function () {
+      const isSubscribed = this.classList.contains("subscribed");
+
+      if (!isSubscribed) {
+        this.classList.add("subscribed");
+        this.textContent = "Subscribed";
+        gsap.fromTo(
+          this,
+          { scale: 0.95 },
+          { scale: 1, duration: 0.2, ease: "back.out(2)" },
+        );
+      } else {
+        this.classList.remove("subscribed");
+        this.textContent = "Subscribe";
+        gsap.fromTo(
+          this,
+          { x: -2 },
+          { x: 0, duration: 0.1, repeat: 3, ease: "power1.inOut" },
+        );
+      }
+    });
+
+    creatorsContainer.appendChild(card);
+  });
+
+  // 3. Populate Platform Features
+  const featuresContainer = document.getElementById("featureContainer");
+  featureData.forEach((item) => {
+    const fCard = document.createElement("div");
+    fCard.className = "feature-card";
+    fCard.style.opacity = "0"; // Set initial state for GSAP
+    fCard.innerHTML = `
+        <span class="feature-icon">${item.icon}</span>
+        <h3>${item.title}</h3>
+        <p>${item.desc}</p>
+    `;
+    featuresContainer.appendChild(fCard);
+  });
+
+  // 4. Combined GSAP Animations
+  // Creators Entrance
+  gsap.to(".creator-card", {
+    opacity: 1,
+    y: 0,
+    stagger: 0.1,
+    duration: 0.8,
+    ease: "power2.out",
+    startAt: { y: 30 },
+  });
+
+  // Features Entrance
+  gsap.to(".feature-card", {
+    opacity: 1,
+    scale: 1,
+    stagger: 0.1,
+    duration: 0.6,
+    delay: 0.4,
+    ease: "elastic.out(1, 0.75)",
+    startAt: { scale: 0.9 },
+  });
+</script>
+
+<script>
+  // 1. Categories & Steps Data
+  const categoryData = [
+    { name: "Technology", icon: "💻", count: "125k+ Videos" },
+    { name: "Gaming", icon: "🎮", count: "890k+ Videos" },
+    { name: "Music", icon: "🎵", count: "500k+ Videos" },
+    { name: "Education", icon: "🎓", count: "210k+ Videos" },
+    { name: "Lifestyle", icon: "✨", count: "340k+ Videos" },
+    { name: "Podcasts", icon: "🎙️", count: "95k+ Videos" },
+    { name: "Food", icon: "🍳", count: "420k+ Videos" },
+  ];
+
+  const stepData = [
+    {
+      step: "Step 1",
+      title: "Create Account",
+      desc: "Sign up and create your profile to start your journey.",
+    },
+    {
+      step: "Step 2",
+      title: "Explore Content",
+      desc: "Watch high-quality videos or discover trending creators.",
+    },
+    {
+      step: "Step 3",
+      title: "Engage Community",
+      desc: "Like, comment, and share videos with your network.",
+    },
+    {
+      step: "Step 4",
+      title: "Grow Channel",
+      desc: "Upload videos and build your own global audience.",
+    },
+    {
+      step: "Step 5",
+      title: "Monetize & Scale",
+      desc: "Unlock revenue streams and track your success with advanced analytics.",
+    },
+  ];
+  // 2. Populate Categories
+  const catBox = document.getElementById("categoryContainer");
+  categoryData.forEach((item) => {
+    catBox.innerHTML += `
+        <div class="category-card">
+            <span class="cat-icon">${item.icon}</span>
+            <div class="cat-name">${item.name}</div>
+            <div class="cat-count">${item.count}</div>
+        </div>
+    `;
+  });
+
+  // 3. Populate Workflow
+  const stepBox = document.getElementById("workflowContainer");
+  stepData.forEach((item) => {
+    stepBox.innerHTML += `
+        <div class="step-card">
+            <div class="step-number">${item.step}</div>
+            <h3>${item.title}</h3>
+            <p>${item.desc}</p>
+        </div>
+    `;
+  });
+
+  // 4. GSAP Animations
+  // Entrance for Categories
+  gsap.to(".category-card", {
+    opacity: 1,
+    y: 0,
+    stagger: 0.1,
+    duration: 0.8,
+    ease: "power2.out",
+    startAt: { y: 40 },
+  });
+
+  // Entrance for Workflow Steps
+  gsap.to(".step-card", {
+    opacity: 1,
+    x: 0,
+    stagger: 0.2,
+    duration: 1,
+    delay: 0.3,
+    ease: "expo.out",
+    startAt: { x: -50 },
+  });
+</script>
+
+<script>
+  // 8. Stats Data
+  const stats = [
+    { label: "Users", count: "1M+" },
+    { label: "Videos Uploaded", count: "500K" },
+    { label: "Creators", count: "10K" },
+  ];
+
+  // 9. Blog Data
+  const blogs = [
+    {
+      title: "How to Grow Your Channel",
+      excerpt: "Learn the secrets to organic growth and audience retention.",
+      img: "./Assets/howto grow_11zon.webp",
+    },
+    {
+      title: "Best Video Editing Tips",
+      excerpt:
+        "Master the art of storytelling with these professional techniques.",
+      img: "./Assets/editing tips_11zon.webp",
+    },
+    {
+      title: "Create Viral Shorts",
+      excerpt: "The ultimate guide to vertical video success in 2026.",
+      img: "./Assets/create virl shorts_11zon.webp",
+    },
+    {
+      title: "Essential Gear for 2026",
+      excerpt: "From lighting to audio, discover the must-have equipment for high-end production.",
+      img: "./Assets/YouTube SEO in 2026_11zon_11zon.webp",
+    },
+  ];
+
+  // Injections
+  const statsRow = document.getElementById("statsRow");
+  stats.forEach((s) => {
+    statsRow.innerHTML += `<div class="stat-item"><span class="stat-number">${s.count}</span><span class="stat-label">${s.label}</span></div>`;
+  });
+
+  const blogGrid = document.getElementById("blogGrid");
+  blogs.forEach((b) => {
+    blogGrid.innerHTML += `
+        <div class="blog-card">
+            <img src="${b.img}" alt="blog">
+            <div class="blog-info">
+                <h3>${b.title}</h3>
+                <p>${b.excerpt}</p>
+                <a href="./error.html" class="read-more">Read More →</a>
+                
+            </div>
+        </div>
+    `;
+  });
+
+  // GSAP Animations
+  gsap.to(".stat-item", {
+    opacity: 1,
+    scale: 1.1,
+    stagger: 0.2,
+    duration: 1,
+    ease: "back.out(1.7)",
+    startAt: { scale: 0.5 },
+  });
+
+  gsap.to(".blog-card", {
+    opacity: 1,
+    y: 0,
+    stagger: 0.2,
+    duration: 0.8,
+    ease: "power2.out",
+    startAt: { y: 50 },
+  });
+
+  // CTA Entrance
+  gsap.from(".cta-content", {
+    opacity: 0,
+    y: 100,
+    duration: 1.5,
+    ease: "expo.out",
+  });
+</script>
+
+
+
+
+
+
+
