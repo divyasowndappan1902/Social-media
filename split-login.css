@@ -318,4 +318,11 @@ body {
   .left-content {
     display: none;
   }
+  
+  .back-to-home {
+    top: 20px;
+    right: 20px;
+    font-size: 0.85rem;
+    z-index: 100;
+  }
 }
