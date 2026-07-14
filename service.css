@@ -682,7 +682,7 @@ body.no-scroll {
   grid-template-columns: 1.8fr 0.8fr 2fr;
   gap: 80px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #161616;
 }
 
 .footer-logo {
@@ -731,7 +731,7 @@ body.no-scroll {
 }
 
 .news-input input {
-  background: #1e293b;
+  background: #161616;
   border: none;
   padding: 15px;
   color: #fff;
@@ -1032,7 +1032,7 @@ main {
 /* Analytics Cards */
 .analytics-section {
   padding: 50px 5%;
-  background: #0a0a0a;
+  background: #050505;
   text-align: center;
 }
 .analytics-grid {
@@ -1193,7 +1193,7 @@ main {
 /* CTA Section Styles */
 .start-creating-cta {
   padding: 50px 5%;
-  background: #0a0a0a;
+  background: #050505;
 }
 
 .cta-inner-container {
@@ -1247,7 +1247,7 @@ main {
 }
 
 .primary-cta-btn:hover {
-  background: #ff0000;
+  background: #a00000;
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(139, 0, 0, 0.4);
 }

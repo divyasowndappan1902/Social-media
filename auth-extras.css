@@ -67,7 +67,7 @@
 /* Sidebar */
 .dashboard-sidebar {
   width: 250px;
-  background-color: #0f0f0f;
+  background-color: #161616;
   border-right: 1px solid rgba(255, 255, 255, 0.05);
   position: fixed;
   height: 100vh;
@@ -135,7 +135,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #0f0f0f;
+  background-color: #161616;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -374,7 +374,7 @@
 .social-icons a:hover {
   background: red;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
 }
 
 
@@ -488,27 +488,105 @@
 
 /* PERFECT MOBILE RESPONSIVE OVERRIDES */
 @media (max-width: 768px) {
-  /* Prevent tables from squishing text */
-  .dashboard-table th, .dashboard-table td {
-    white-space: nowrap;
+  html, body.dashboard-body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
   }
+  
+  .dashboard-main {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+}
 
-  /* Force all inline flex components to wrap */
-  .dashboard-content [style*="display: flex"] {
-    flex-wrap: wrap !important;
+@media (max-width: 320px) {
+  html, body.dashboard-body {
+    overflow-x: hidden !important;
+    width: 100vw !important;
+    max-width: 100%;
+  }
+  .dashboard-main {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding: 10px !important; /* Slightly smaller padding for 320px to prevent overflow */
+  }
+  .dashboard-table-container {
+    overflow-x: auto !important; /* ensure tables can scroll internally without breaking page width */
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
   }
   
-  /* Settings/Security rows that use space-between -> Stack vertically on mobile */
-  .dashboard-content [style*="justify-content: space-between"] {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 15px !important;
+  .admin-mobile-topbar {
+    flex-direction: column-reverse !important;
+    align-items: stretch !important;
+    gap: 20px !important;
   }
   
-  /* Product Grids / Cards -> Expand to 100% width on mobile */
-  .dashboard-content [style*="gap: 20px"] > div, 
-  .dashboard-content [style*="gap: 15px"] > div {
-    flex: 1 1 100% !important;
-    min-width: 100% !important;
+  .admin-mobile-topbar .topbar-left {
+    align-self: flex-start !important;
   }
+  
+  .admin-mobile-topbar .topbar-right {
+    align-self: flex-end !important;
+  }
+}
+
+/* Responsive Topbar layout */
+.responsive-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.responsive-topbar .topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.responsive-topbar .topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+    .responsive-topbar {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 10px !important;
+        padding: 10px 15px !important;
+    }
+    .responsive-topbar .topbar-left {
+        width: auto !important;
+        gap: 10px !important;
+        align-items: center;
+    }
+    .responsive-topbar .topbar-right {
+        width: auto !important;
+        gap: 15px !important;
+        align-items: center !important;
+        flex-direction: row !important;
+    }
+    .responsive-topbar .page-title {
+        font-size: 1.1rem !important;
+        text-align: left;
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
+        white-space: nowrap;
+    }
+    .profile-row {
+        gap: 15px !important;
+    }
 }

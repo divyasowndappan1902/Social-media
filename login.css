@@ -637,7 +637,7 @@ body.no-scroll {
   max-height: 0; /* Changed from 100% to 0 */
   overflow: hidden;
   list-style: none;
-  background: rgba(255, 0, 0, 0.05);
+  background: rgba(255, 59, 59, 0.05);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -682,7 +682,7 @@ body.no-scroll {
   grid-template-columns: 1.8fr 0.8fr 2fr;
   gap: 80px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #161616;
 }
 
 .footer-logo {
@@ -709,7 +709,7 @@ body.no-scroll {
 .footer-links h4,
 .footer-newsletter h4 {
   color: red;
-  /* text-shadow: 0 0 8px rgba(139, 0, 0, 0.7); */
+  /* text-shadow: 0 0 8px rgba(0, 180, 216, 0.7); */
   margin-bottom: 25px;
 }
 
@@ -731,7 +731,7 @@ body.no-scroll {
 }
 
 .news-input input {
-  background: #1e293b;
+  background: #161616;
   border: none;
   padding: 15px;
   color: #fff;
@@ -821,8 +821,8 @@ main {
   border-radius: 20px;
   overflow: hidden;
 
-  box-shadow: 0 0 40px rgba(255, 0, 0, 0.25);
-  border: 1px solid rgba(255, 0, 0, 0.35);
+  box-shadow: 0 0 40px rgba(255, 59, 59, 0.25);
+  border: 1px solid rgba(255, 59, 59, 0.35);
 }
 
 /* LEFT */
@@ -873,7 +873,7 @@ main {
   font-size: 14px;
   opacity: 0.7;
   padding: 10px 15px;
-  border: 2px solid rgba(255, 0, 0, 0.35);
+  border: 2px solid rgba(255, 59, 59, 0.35);
   border-radius: 12px;
   width: max-content;
 }
@@ -882,7 +882,7 @@ main {
   text-decoration: none;
   color: white;
   padding: 6px 15px;
-  border: 1px solid rgba(255, 0, 0, 0.35);
+  border: 1px solid rgba(255, 59, 59, 0.35);
   border-radius: 8px;
   margin: 0px 5px;
 }
@@ -1117,6 +1117,6 @@ main {
 .social-icons a:hover {
   background: red;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(255, 59, 59, 0.4);
 }
 

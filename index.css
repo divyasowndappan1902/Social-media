@@ -682,7 +682,7 @@ body.no-scroll {
   grid-template-columns: 1.8fr 0.8fr 2fr;
   gap: 80px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #161616;
 }
 
 .footer-logo {
@@ -731,7 +731,7 @@ body.no-scroll {
 }
 
 .news-input input {
-  background: #1e293b;
+  background: #161616;
   border: none;
   padding: 15px;
   color: #fff;
@@ -917,7 +917,7 @@ main {
 }
 
 .btn-watch:hover {
-  background: #a30000; /* Slightly lighter red on hover */
+  background: #a00000; /* Slightly lighter red on hover */
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(139, 0, 0, 0.6);
 }
@@ -1649,11 +1649,11 @@ main {
   height: 8px;
 }
 .shorts-grid::-webkit-scrollbar-track {
-  background: #111827;
+  background: #0f0f0f;
   border-radius: 4px;
 }
 .shorts-grid::-webkit-scrollbar-thumb {
-  background: #374151;
+  background: #272727;
   border-radius: 4px;
 }
 .short-card {
@@ -1753,8 +1753,8 @@ main {
   flex-wrap: wrap;
 }
 .pricing-card {
-  background: #111827;
-  border: 1px solid #1f2937;
+  background: #0f0f0f;
+  border: 1px solid #1a1a1a;
   border-radius: 16px;
   padding: 40px;
   width: 350px;
@@ -1765,7 +1765,7 @@ main {
   border: 2px solid red;
   background: linear-gradient(180deg, #192235 0%, #0b1120 100%);
   transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(255,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(255, 0, 0,0.15);
 }
 .popular-badge {
   position: absolute;
@@ -1823,12 +1823,12 @@ main {
   border: none;
 }
 .pricing-card .btn-primary:hover {
-  background: #cc0000;
+  background: #8b0000;
 }
 .pricing-card .btn-outline {
   background: transparent;
   color: white;
-  border: 1px solid #374151;
+  border: 1px solid #272727;
 }
 .pricing-card .btn-outline:hover {
   border-color: white;

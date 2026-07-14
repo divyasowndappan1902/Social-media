@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Dashboard</title>
+    <link rel="stylesheet" href="modern_dashboard.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="top-header full-width-header">
+            <div class="header-left">
+                <div class="logo">
+                    <i class="ph-fill ph-hexagon" style="color: #00f2fe; margin-right: 8px; font-size: 24px;"></i>
+                    <span>STACKLY</span>
+                </div>
+            </div>
+            
+            <div class="search-bar">
+                <i class="ph ph-magnifying-glass"></i>
+                <input type="text" placeholder="Search users, IDs, emails...">
+            </div>
+            
+            <div class="header-actions">
+                <div class="notification-bell">
+                    <i class="ph ph-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="user-profile">
+                    <div class="user-info">
+                        <span class="user-name">Admin User</span>
+                        <span class="user-role">Super Admin</span>
+                        <span class="user-email">divyasawandappan1902@gmail.com</span>
+                    </div>
+                    <div class="user-avatar">A</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-main-layout">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <a href="#" class="nav-item active">
+                        <i class="ph ph-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="ph ph-users"></i>
+                        <span>User Management</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="ph ph-check-circle"></i>
+                        <span>Trade Approvals</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="ph ph-shield-check"></i>
+                        <span>Compliance</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="ph ph-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </nav>
+                <div class="sidebar-footer">
+                    <a href="#" class="nav-item logout">
+                        <i class="ph ph-sign-out"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Dashboard Body -->
+                <div class="dashboard-body">
+                <div class="page-title">
+                    <h1>Overview</h1>
+                    <p>Welcome back, here's what's happening today.</p>
+                </div>
+
+                <!-- Metrics Grid -->
+                <div class="metrics-grid">
+                    <!-- Metric Card 1 -->
+                    <div class="metric-card">
+                        <div class="metric-icon users-icon">
+                            <i class="ph ph-users"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-label">Total Users</span>
+                            <span class="metric-value">12,543</span>
+                            <span class="metric-change positive"><i class="ph ph-trend-up"></i> +12%</span>
+                        </div>
+                    </div>
+                    <!-- Metric Card 2 -->
+                    <div class="metric-card">
+                        <div class="metric-icon volume-icon">
+                            <i class="ph ph-currency-dollar"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-label">Daily Volume</span>
+                            <span class="metric-value">$4.2M</span>
+                            <span class="metric-change positive"><i class="ph ph-trend-up"></i> +5.4%</span>
+                        </div>
+                    </div>
+                    <!-- Metric Card 3 -->
+                    <div class="metric-card">
+                        <div class="metric-icon trades-icon">
+                            <i class="ph ph-chart-bar"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-label">Active Trades</span>
+                            <span class="metric-value">842</span>
+                            <span class="metric-change negative"><i class="ph ph-trend-down"></i> -1.2%</span>
+                        </div>
+                    </div>
+                    <!-- Metric Card 4 -->
+                    <div class="metric-card">
+                        <div class="metric-icon alerts-icon">
+                            <i class="ph ph-warning"></i>
+                        </div>
+                        <div class="metric-details">
+                            <span class="metric-label">System Alerts</span>
+                            <span class="metric-value">3</span>
+                            <span class="metric-change neutral">Requires action</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Grid -->
+                <div class="bottom-grid">
+                    <!-- Recent Activity -->
+                    <div class="recent-activity panel">
+                        <div class="panel-header">
+                            <h2>Recent User Activity</h2>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+                        <div class="table-container">
+                            <table class="activity-table">
+                                <thead>
+                                    <tr>
+                                        <th>User</th>
+                                        <th>Action</th>
+                                        <th>Status</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell">
+                                                <div class="avatar-small">JS</div>
+                                                <span>John Smith</span>
+                                            </div>
+                                        </td>
+                                        <td>Account Registration</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td class="time-cell">2 mins ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell">
+                                                <div class="avatar-small">EW</div>
+                                                <span>Emma Watson</span>
+                                            </div>
+                                        </td>
+                                        <td>Wire Transfer ($50k)</td>
+                                        <td><span class="status-badge status-pending">Pending Approval</span></td>
+                                        <td class="time-cell">15 mins ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell">
+                                                <div class="avatar-small">MR</div>
+                                                <span>Michael Ross</span>
+                                            </div>
+                                        </td>
+                                        <td>Margin Call Warning</td>
+                                        <td><span class="status-badge status-alert">Alert</span></td>
+                                        <td class="time-cell">1 hr ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell">
+                                                <div class="avatar-small">LB</div>
+                                                <span>Lisa Bonet</span>
+                                            </div>
+                                        </td>
+                                        <td>BTC Purchase (2.5)</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td class="time-cell">2 hrs ago</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Right Column (Status & Load) -->
+                    <div class="right-panels">
+                        <div class="system-status panel">
+                            <h2>System Status</h2>
+                            <div class="status-list">
+                                <div class="status-item">
+                                    <span>Trading Engine</span>
+                                    <span class="status-indicator operational"><span class="dot"></span>Operational</span>
+                                </div>
+                                <div class="status-item">
+                                    <span>Market Data Feed</span>
+                                    <span class="status-indicator operational"><span class="dot"></span>Operational</span>
+                                </div>
+                                <div class="status-item">
+                                    <span>Payment Gateway</span>
+                                    <span class="status-indicator degraded"><span class="dot"></span>Degraded</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="server-load panel">
+                            <h2>Server Load</h2>
+                            <div class="chart-container">
+                                <!-- Simple CSS Bar Chart -->
+                                <div class="bar-chart">
+                                    <div class="bar" style="height: 30%;"></div>
+                                    <div class="bar" style="height: 40%;"></div>
+                                    <div class="bar" style="height: 35%;"></div>
+                                    <div class="bar" style="height: 50%;"></div>
+                                    <div class="bar" style="height: 45%;"></div>
+                                    <div class="bar" style="height: 80%; background-color: var(--success-color);"></div>
+                                    <div class="bar" style="height: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div> <!-- Close dashboard-main-layout -->
+</div> <!-- Close dashboard-container -->
+</body>
+</html>

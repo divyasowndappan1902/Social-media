@@ -682,7 +682,7 @@ body.no-scroll {
   grid-template-columns: 1.8fr 0.8fr 2fr;
   gap: 80px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #161616;
 }
 
 .footer-logo {
@@ -731,7 +731,7 @@ body.no-scroll {
 }
 
 .news-input input {
-  background: #1e293b;
+  background: #161616;
   border: none;
   padding: 15px;
   color: #fff;
@@ -989,7 +989,7 @@ main {
 /* Mission & Vision */
 .mission-vision {
   padding: 50px 5% 50px;
-  background-color: #0a0a0a;
+  background-color: #050505;
 }
 
 .mission-grid {
@@ -1076,7 +1076,7 @@ main {
 /* General Section Settings */
 .team-section {
   padding: 50px 5%;
-  background-color: #0a0a0a;
+  background-color: #050505;
   color: #fff;
   text-align: center;
 }
@@ -1277,12 +1277,12 @@ main {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  border: 1px solid rgba(255,0,0,0.05);
+  border: 1px solid rgba(255, 0, 0,0.05);
 }
 .value-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 30px rgba(255, 0, 0, 0.2);
-  border-color: rgba(255,0,0,0.2);
+  border-color: rgba(255, 0, 0,0.2);
 }
 .value-icon {
   font-size: 50px;
@@ -1303,7 +1303,7 @@ main {
 /* --- Journey Timeline Section --- */
 .journey-section {
   padding: 80px 4%;
-  background-color: #111827;
+  background-color: #0f0f0f;
 }
 .timeline {
   position: relative;
@@ -1358,7 +1358,7 @@ main {
 }
 .timeline-content:hover {
   transform: scale(1.02);
-  box-shadow: 0 5px 15px rgba(255,0,0,0.15);
+  box-shadow: 0 5px 15px rgba(255, 0, 0,0.15);
 }
 .timeline-content h2 {
   color: red;

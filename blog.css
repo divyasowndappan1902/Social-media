@@ -682,7 +682,7 @@ body.no-scroll {
   grid-template-columns: 1.8fr 0.8fr 2fr;
   gap: 80px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #161616;
 }
 
 .footer-logo {
@@ -731,7 +731,7 @@ body.no-scroll {
 }
 
 .news-input input {
-  background: #1e293b;
+  background: #161616;
   border: none;
   padding: 15px;
   color: #fff;
@@ -1017,20 +1017,20 @@ main {
   padding: 12px 28px;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(135deg, #ff3b3b, #b00000);
+  background: linear-gradient(135deg, #a00000, #0096c7);
   color: #fff;
   font-size: 15px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   transition: all 0.35s ease;
-  box-shadow: 0 6px 18px rgba(255, 59, 59, 0.35);
+  box-shadow: 0 6px 18px rgba(255, 0, 0, 0.35);
 }
 
 /* Hover */
 .read-btn:hover {
-  box-shadow: 0 0px 25px rgba(255, 59, 59, 0.5);
-  background: linear-gradient(135deg, #cc0000, #ff4d4d);
+  box-shadow: 0 0px 25px rgba(255, 0, 0, 0.5);
+  background: linear-gradient(135deg, #8b0000, #ff4d4d);
 }
 
 .featured-side-list {
@@ -1061,7 +1061,7 @@ main {
 /* Grid Section */
 .latest-posts {
   padding: 60px 5%;
-  background: #0a0a0a;
+  background: #050505;
 }
 .blog-grid {
   display: grid;
@@ -1227,7 +1227,7 @@ main {
 }
 
 .input-group button:hover {
-  background: #ff0000;
+  background: #a00000;
   transform: scale(1.03);
 }
 
@@ -1296,7 +1296,7 @@ main {
   gap: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255,0,0,0.1);
+  border: 1px solid rgba(255, 0, 0,0.1);
 }
 .category-chip:hover {
   background: rgba(255, 0, 0, 0.1);
@@ -1316,7 +1316,7 @@ main {
 /* --- Creator Spotlight Section --- */
 .creator-spotlight-section {
   padding: 80px 4%;
-  background-color: #111827;
+  background-color: #0f0f0f;
 }
 .spotlight-grid {
   display: grid;

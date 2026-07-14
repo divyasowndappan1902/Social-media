@@ -682,7 +682,7 @@ body.no-scroll {
   grid-template-columns: 1.8fr 0.8fr 2fr;
   gap: 80px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #161616;
 }
 
 .footer-logo {
@@ -731,7 +731,7 @@ body.no-scroll {
 }
 
 .news-input input {
-  background: #1e293b;
+  background: #161616;
   border: none;
   padding: 15px;
   color: #fff;
@@ -1128,7 +1128,7 @@ main {
 /* --- Global Offices Section --- */
 .global-offices-section {
   padding: 80px 4%;
-  background-color: #111827;
+  background-color: #0f0f0f;
 }
 .offices-grid {
   display: grid;
