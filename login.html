@@ -98,19 +98,15 @@
         const email = document.getElementById("email").value.trim();
         const pass = document.getElementById("password").value.trim();
         const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-        const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$/;
+        const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6}$/;
 
         if (!gmailPattern.test(email)) {
           alert("Email must end with @gmail.com (Demo requirement)");
           return;
         }
 
-        if (!passwordPattern.test(pass)) {
-          alert("Password must contain:\n- Uppercase letter\n- Lowercase letter\n- Number\n- Special symbol\n- Minimum 6 characters");
-          return;
-        }
+        
 
-        alert("Login successful!");
 
         localStorage.setItem("userEmail", email);
         const username = email.split('@')[0];

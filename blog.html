@@ -292,7 +292,8 @@
       </div>
     </section>
 
-    </div>`n    <footer class="main-footer">
+    </div>
+    <footer class="main-footer">
       <div class="footer-grid">
         <div class="footer-brand gsap-contact">
           <div class="logo" style="margin-bottom: 20px">
@@ -387,7 +388,7 @@
       title: "Managing Your Burnout",
       summary:
         "Why creators fail and how to maintain a sustainable upload schedule.",
-      img: "./Assets/Managing Your Burnout_11zon_11zon.webp",
+      img: "./Assets/bloghero_11zon_11zon.webp",
     },
     {
       title: "Thumbnail Psychology",
@@ -413,27 +414,40 @@
         "How to network with other creators to boost your subscriber count.",
       img: "./Assets/Collaboration Strategies_11zon_11zon.webp",
     },
+    {
+      title: "Advanced Editing Tips",
+      summary:
+        "Learn how to speed up your workflow and produce high-quality videos faster.",
+      img: "./Assets/editing tips_11zon.webp",
+    },
+    {
+      title: "How to Grow from 0 to 1K",
+      summary:
+        "The proven roadmap to get your first 1,000 loyal subscribers.",
+      img: "./Assets/howto grow_11zon.webp",
+    },
   ];
 
   // 2. Inject Grid Items
   const grid = document.getElementById("blogGrid");
-  postData.forEach((post) => {
-    grid.innerHTML += `
-        <div class="blog-card">
-            <img src="${post.img}" alt="Blog Image">
-            <div class="blog-card-content">
-                <h3>${post.title}</h3>
-                <p>${post.summary}</p>
-                <a href="./error.html" class="read-more-link">Read More →</a>
+  if (grid) {
+      postData.forEach((post) => {
+        grid.innerHTML += `
+            <div class="blog-card">
+                <img src="${post.img}" alt="Blog Image">
+                <div class="blog-card-content">
+                    <h3>${post.title}</h3>
+                    <p>${post.summary}</p>
+                    <a href="./error.html" class="read-more-link">Read More →</a>
+                </div>
             </div>
-        </div>
-    `;
-  });
+        `;
+      });
+  }
 
   // 3. GSAP Scroll Animations
   gsap.registerPlugin(ScrollTrigger);
 
-  // Featured Stagger
   gsap.from(".featured-main-card", {
     scrollTrigger: ".featured-section",
     x: -50,

@@ -244,31 +244,10 @@
       </div>
     </section>
 
-    <section class="faq-section">
-      <div class="container">
-        <h2 class="section-heading">Frequently Asked <span>Questions</span></h2>
-        <div class="faq-grid">
-          <div class="faq-card">
-            <h3>How do I monetize my videos?</h3>
-            <p>Once you reach 1,000 subscribers and 4,000 watch hours, you can apply for the Partner Program in your Dashboard.</p>
-          </div>
-          <div class="faq-card">
-            <h3>What are the upload limits?</h3>
-            <p>Basic accounts can upload up to 15 minutes per video. Verified accounts have no length limits and can upload up to 4K resolution.</p>
-          </div>
-          <div class="faq-card">
-            <h3>How do I reset my password?</h3>
-            <p>Click "Forgot Password" on the login screen. We will send a secure reset link to your registered email address.</p>
-          </div>
-          <div class="faq-card">
-            <h3>How can I appeal a copyright strike?</h3>
-            <p>Navigate to the "Copyright" tab in your Studio dashboard and click "Submit Counter Notification" on the affected video.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+   
 
-    </div>`n    <footer class="main-footer">
+    </div>
+    <footer class="main-footer">
       <div class="footer-grid">
         <div class="footer-brand gsap-contact">
           <div class="logo" style="margin-bottom: 20px">
@@ -443,11 +422,7 @@
     submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
 
     // Simulate API Call
-    setTimeout(() => {
-      submitBtn.style.background = "#28a745";
-      submitBtn.innerHTML = "Message Sent! ✅";
-      contactForm.reset();
-
+   
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.style.background = "#8B0000";

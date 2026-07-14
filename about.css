@@ -821,7 +821,7 @@ main {
   height: 100%;
   /* High-quality YouTube/Creator themed image */
   /* use new img while doing media query */
-  background-image: url("./Assets/anouthero_11zon.webp");
+  background-image: url("./Assets/indexherostudio_11zon_11zon.webp");
   background-size: cover;
   background-position: center;
   filter: blur(10px); /* Applied blur */
