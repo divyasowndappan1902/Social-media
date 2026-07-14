@@ -590,3 +590,17 @@ body {
         width: 200px;
     }
 }
+
+/* ACTIVE NAV STATE GLOBALLY ADDED */
+nav ul li a.active {
+  color: white !important;
+  background-color: black !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.sidebar ul li a.active {
+  color: white !important;
+  background-color: black !important;
+  padding-left: 20px;
+  border-radius: 8px;
+}

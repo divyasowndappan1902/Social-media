@@ -1462,3 +1462,17 @@ main {
   box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
 }
 
+
+/* ACTIVE NAV STATE GLOBALLY ADDED */
+nav ul li a.active {
+  color: white !important;
+  background-color: black !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.sidebar ul li a.active {
+  color: white !important;
+  background-color: black !important;
+  padding-left: 20px;
+  border-radius: 8px;
+}
