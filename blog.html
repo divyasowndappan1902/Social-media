@@ -200,21 +200,21 @@
             <h3>Sarah Jenkins</h3>
             <p class="spotlight-role">SEO Expert</p>
             <p class="spotlight-bio">Helping creators hack the algorithm and double their views.</p>
-            <a href="#" class="spotlight-btn">Read Articles</a>
+            <a href="./error.html" class="spotlight-btn">Read Articles</a>
           </div>
           <div class="spotlight-card">
             <div class="spotlight-avatar" style="background-image: url('./Assets/user2_11zon.webp');"></div>
             <h3>David Chen</h3>
             <p class="spotlight-role">Cinematographer</p>
             <p class="spotlight-bio">Expert gear reviews and advanced lighting tutorials.</p>
-            <a href="#" class="spotlight-btn">Read Articles</a>
+            <a href="./error.html" class="spotlight-btn">Read Articles</a>
           </div>
           <div class="spotlight-card">
             <div class="spotlight-avatar" style="background-image: url('./Assets/user3_11zon.webp');"></div>
             <h3>Elena Rodriguez</h3>
             <p class="spotlight-role">Community Manager</p>
             <p class="spotlight-bio">Strategies for building a loyal and engaged subscriber base.</p>
-            <a href="#" class="spotlight-btn">Read Articles</a>
+            <a href="./error.html" class="spotlight-btn">Read Articles</a>
           </div>
         </div>
       </div>
@@ -312,11 +312,11 @@
             engaging communities, and the latest social trends all in one place.
           </p>
           <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="./error.html"><i class="fab fa-twitter"></i></a>
+            <a href="./error.html"><i class="fab fa-instagram"></i></a>
+            <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+            <a href="./error.html"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
 
@@ -471,8 +471,9 @@
       start: "top 80%",
     },
     opacity: 1,
-    duration: 1,
-    ease: "power2.out",
+    y: 50,
+    duration: 1.2,
+    ease: "power3.out",
   });
 </script>
 
@@ -492,41 +493,6 @@
     ease: "power3.out",
   });
 
-  // 2. Form Submission Functionality
-  const newsForm = document.getElementById("creatorNewsletter");
-  const subBtn = document.getElementById("submitBtn");
-
-  newsForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const originalText = subBtn.innerHTML;
-
-    // Disable button & show loading
-    subBtn.disabled = true;
-    subBtn.innerHTML = "<span>Subscribing...</span>";
-
-    // Simulate API call
-    setTimeout(() => {
-      subBtn.style.background = "#28a745"; // Success green
-      subBtn.innerHTML = "<span>Joined! ✅</span>";
-
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        newsForm.reset();
-        subBtn.disabled = false;
-        subBtn.style.background = "#8B0000";
-        subBtn.innerHTML = originalText;
-      }, 3000);
-    }, 1500);
-  });
-</script>
-
-<script>
-  // Function to handle the redirection
-  function redirectToError() {
-    window.location.href = "error.html";
-  }
-
   // Attach the function to all side-item classes
   document.addEventListener("DOMContentLoaded", () => {
     const sideItems = document.querySelectorAll(".side-item");
@@ -537,15 +503,12 @@
         gsap.to(item, {
           scale: 0.95,
           duration: 0.1,
-          onComplete: redirectToError,
+          onComplete: () => { window.location.href = "./error.html"; }
         });
       });
     });
   });
 </script>
 
-
-
-
-
-
+</body>
+</html>
