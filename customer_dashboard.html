@@ -7,16 +7,17 @@
     <link rel="icon" href="./Assets/icon.webp" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./auth-extras.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
   <body class="dashboard-body">
 
     <!-- Left Sidebar -->
     <aside class="dashboard-sidebar">
-      <div class="logo">
-        <a href="./index.html">
-          <img src="./Assets/logo.webp" alt="Stackly Logo" />
+      <div class="sidebar-logo" style="display: flex; align-items: center; justify-content: center; padding: 15px 20px;">
+        <a href="./index.html" style="text-decoration: none;">
+          <img src="./Assets/stackly_logo.png" alt="Stackly Logo" class="logo-img" style="max-height: 65px; width: auto;" />
         </a>
       </div>
       <ul id="sidebar-menu">
@@ -33,34 +34,46 @@
     <main class="dashboard-main">
       
       <!-- Topbar Header -->
-      <header class="dashboard-topbar responsive-topbar">
-        <div class="topbar-left" style="display: flex; align-items: center; gap: 15px;">
-          <button class="mobile-menu-btn" style="border: none; background: transparent; color: white; padding: 0; font-size: 1.5rem;"><i class="fa-solid fa-bars"></i></button>
-          <!-- MOBILE TITLE -->
-          <h1 class="page-title hide-on-desktop" style="font-size: 1.2rem; margin: 0; font-weight: 700;">Customer Overview</h1>
+      <header class="dashboard-topbar responsive-topbar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap !important; white-space: nowrap; padding: 15px 30px; background: #161616; border-bottom: 1px solid #2a2a2a; box-sizing: border-box; width: 100%;">
+        
+        <!-- Left: Search & Mobile Menu -->
+        <div class="topbar-left" style="display: flex; align-items: center; gap: 20px; flex: 1;">
+          <button class="mobile-menu-btn hide-on-desktop" style="border: none; background: transparent; color: white; padding: 0; font-size: 1.5rem; flex-shrink: 0;"><i class="fa-solid fa-bars"></i></button>
         </div>
         
-        <div class="topbar-right" style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
-          <!-- DESKTOP TITLE -->
-          <h1 class="page-title hide-on-mobile" style="font-size: 1.3rem; margin: 0; font-weight: 700; margin-left: 37px;">Customer Overview</h1>
-          <div class="profile-row" style="display: flex; align-items: center; gap: 15px;">
-            <div class="topbar-notifications" style="position: relative; cursor: pointer; display: flex; align-items: center;">
-              <i class="fa-regular fa-bell" style="color: #ccc; font-size: 22px;"></i>
-              <span class="notification-badge" style="position: absolute; top: -6px; right: -6px; background: #ff4757; color: white; font-size: 11px; font-weight: bold; padding: 2px 6px; border-radius: 10px;">3</span>
-            </div>
-            
-            <div class="dashboard-profile" style="display: flex; align-items: center; gap: 15px;">
-              <div class="profile-avatar" style="background-color: #82e0aa; color: #111; font-weight: bold; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">D</div>
-              <div class="profile-info hide-on-mobile" style="text-align: left;">
-                <div class="profile-name" style="font-weight: 700; font-size: 1rem;">Divyasowndappan1902</div>
-                <div class="profile-email" style="color: #999; font-size: 0.85rem;">divyasowndappan1902@gmail.com</div>
-              </div>
-            </div>
+        <!-- Right: Profile & Notifications -->
+        <div class="topbar-right profile-row" style="display: flex; align-items: center; justify-content: flex-end; gap: 25px;">
+          
+          <div class="search-wrapper hide-on-mobile" style="display: flex; align-items: center; background: #0b0b0b; border-radius: 20px; padding: 10px 20px; width: 100%; max-width: 350px; border: 1px solid #333; gap: 10px;">
+            <i class="fa-solid fa-magnifying-glass" style="color: #888;"></i>
+            <input type="text" placeholder="Search orders, customers, or products..." style="background: transparent; border: none; color: #fff; outline: none; width: 100%; font-size: 0.9rem;" />
           </div>
+          
+          <div class="topbar-notifications" style="position: relative; cursor: pointer; display: flex; align-items: center;">
+            <i class="fa-solid fa-bell" style="color: #ffb74d; font-size: 24px;"></i>
+            <span class="notification-badge" style="position: absolute; top: -6px; right: -6px; background: #ff4d4d; color: white; font-size: 11px; font-weight: bold; padding: 2px 6px; border-radius: 12px; border: 2px solid #161616;">12</span>
+          </div>
+          
+          <div class="profile-info hide-on-mobile" style="color: #ccc; font-size: 0.9rem; font-weight: 500;">
+            divyasowndappan1902@gmail.com
+          </div>
+          
+          <div class="admin-badge hide-on-mobile" style="background: rgba(255, 77, 77, 0.15); color: #ff4d4d; font-size: 0.8rem; font-weight: 700; padding: 6px 12px; border-radius: 20px; letter-spacing: 1px; border: 1px solid rgba(255, 77, 77, 0.3);">
+            CUSTOMER
+          </div>
+          
+          <div class="dashboard-profile">
+            <img src="./Assets/default-avatar.webp" alt="Avatar" style="width: 42px; height: 42px; border-radius: 50%; object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name=Customer&background=333&color=fff';" />
+          </div>
+          
         </div>
       </header>
       
       <div class="dashboard-content" id="view-dashboard">
+        <div class="page-title" style="margin-bottom: 25px;" data-aos="fade-up">
+            <h1 style="color: #fff; font-size: 1.8rem; font-weight: 600; margin-bottom: 8px;">My Dashboard</h1>
+            <p style="color: #aaa; font-size: 0.95rem;">Welcome back! Here's an overview of your activity.</p>
+        </div>
         <!-- 4 Stats Cards -->
         <div class="dashboard-stats" data-aos="fade-up" data-aos-duration="1000">
           <div class="stat-card">

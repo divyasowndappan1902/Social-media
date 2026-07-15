@@ -388,3 +388,15 @@ nav ul li a.active {
     font-size: 0.85rem;
   }
 }
+
+/* Universal Card Hover Effect */
+.video-card:hover, .blog-card:hover, .feature-card:hover, .category-card:hover, .short-card:hover,
+.mission-card:hover, .team-card:hover, .value-card:hover, .stat-card:hover, .featured-main-card:hover,
+.spotlight-card:hover, .toolkit-card:hover, .channel-card:hover, .office-card:hover, .faq-card:hover,
+.metric-card:hover, .analytics-card:hover, .monetization-card:hover, .service-card:hover,
+.course-card:hover, .pricing-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4) !important;
+    border-color: #ff0000 !important;
+    transition: all 0.3s ease-in-out !important;
+}

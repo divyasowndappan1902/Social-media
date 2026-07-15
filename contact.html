@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -155,39 +156,32 @@
             <div class="info-block">
               <h3>Support <span>Center</span></h3>
               <p><i class="fas fa-envelope"></i> support@creatorhub.com</p>
-              <a href="./error.html" class="support-link">Visit Help Center →</a>
-              <a href="./error.html" class="support-link">Browse FAQs →</a>
+              <a href="./error.html" class="support-link">Visit Help Center ?</a>
+              <a href="./error.html" class="support-link">Browse FAQs ?</a>
             </div>
 
             <div class="info-block">
               <h3>Office <span>Location</span></h3>
               <div class="map-placeholder">
-                <div class="map-overlay">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>Stackly,India</span>
-                </div>
-                <img
-                  src="./Assets/office location_11zon.webp"
-                  alt="Office Location Map"
-                />
+                <iframe 
+                  src="https://maps.google.com/maps?q=Stackly%20Phase1,%20Salem,%20Tamil%20Nadu&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
               </div>
             </div>
 
             <div class="info-block">
               <h3>Connect with <span>Us</span></h3>
               <div class="social-icons">
-                <a href="./error.html" class="social-link"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a href="./error.html" class="social-link"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="./error.html" class="social-link"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="./error.html" class="social-link"
-                  ><i class="fab fa-facebook"></i
-                ></a>
+                <a href="./error.html" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="./error.html" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="./error.html" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="./error.html" class="social-link"><i class="fab fa-facebook"></i></a>
               </div>
             </div>
           </div>
@@ -276,12 +270,12 @@
           <a href="./contact.html">Contact Us</a>
           <a href="./login.html">Login</a>
         </div>
-        <!-- <div class="footer-links">
-          <h4>Navigation</h4>
-          <a href="./about.html">About</a>
-          <a href="./service.html">Services</a>
-          <a href="./blog.html">Blog</a>
-        </div> -->
+        <div class="footer-links gsap-contact">
+          <h4>Contact Us</h4>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px; color: #aaa;"><i class="fas fa-map-marker-alt" style="color: #ff4d4d; font-size: 1.2rem;"></i> Stackly Phase1, Salem, Tamil Nadu</div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px; color: #aaa;"><i class="fas fa-phone-alt" style="color: #ff4d4d; font-size: 1.2rem;"></i> +91 9876543210</div>
+          <div style="display: flex; align-items: center; gap: 10px; color: #aaa;"><i class="fas fa-envelope" style="color: #ff4d4d; font-size: 1.2rem;"></i> support@thestackly.com</div>
+        </div>
         <div class="footer-newsletter">
           <h4>Newsletter</h4>
           <p>
@@ -291,7 +285,7 @@
           <form action="./error.html">
             <div class="news-input">
               <input type="email" placeholder="Email Address" required />
-              <button type="submit">→</button>
+              <button type="submit" style="display: flex; align-items: center; justify-content: center;"><span class="material-symbols-outlined" style="font-size: 20px;">arrow_forward</span></button>
             </div>
           </form>
         </div>
@@ -431,6 +425,8 @@
     }, 2000);
   });
 </script>
+
+
 
 
 
