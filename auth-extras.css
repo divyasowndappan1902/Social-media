@@ -605,7 +605,6 @@ nav ul li a.active {
   border-radius: 8px;
 }
 
-/* Universal Card Hover Effect */
 .video-card:hover, .blog-card:hover, .feature-card:hover, .category-card:hover, .short-card:hover,
 .mission-card:hover, .team-card:hover, .value-card:hover, .stat-card:hover, .featured-main-card:hover,
 .spotlight-card:hover, .toolkit-card:hover, .channel-card:hover, .office-card:hover, .faq-card:hover,
@@ -615,4 +614,35 @@ nav ul li a.active {
     box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4) !important;
     border-color: #ff0000 !important;
     transition: all 0.3s ease-in-out !important;
+}
+
+/* Perfect mobile responsive view for dashboard logos */
+.sidebar-logo {
+  overflow: hidden; /* Ensure logo doesn't break sidebar layout */
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  width: 190px; /* Increased logo size */
+  max-width: 100%;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .sidebar-logo {
+    padding: 10px 15px !important;
+  }
+  .logo-img {
+    width: 160px; /* Larger on mobile as well */
+    max-height: 70px !important; 
+  }
 }
