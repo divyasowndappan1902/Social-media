@@ -238,8 +238,6 @@
       </div>
     </section>
 
-   
-
     </div>
     <footer class="main-footer">
       <div class="footer-grid">
@@ -259,6 +257,13 @@
             from around the world. Stackly brings you real-time content,
             engaging communities, and the latest social trends all in one place.
           </p>
+          <div class="social-icons">
+            <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="./error.html"><i class="fab fa-twitter"></i></a>
+            <a href="./error.html"><i class="fab fa-instagram"></i></a>
+            <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+            <a href="./error.html"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
 
         <div class="footer-links gsap-contact">
@@ -416,7 +421,7 @@
     submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
 
     // Simulate API Call
-   
+    setTimeout(() => {
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.style.background = "#8B0000";
@@ -425,10 +430,3 @@
     }, 2000);
   });
 </script>
-
-
-
-
-
-
-
